@@ -513,3 +513,679 @@ min = (x < y) ? x : y;
 
 Din când în când, aceasta este destul de utilă.
 
+### Instrucțiunea Switch
+
+Instrucțiunea switch este un "if" generalizat de-a lungul liniilor instrucțiunii case din Pascal. Expresia este evaluată și controlul sare la punctul corespunzător în cod.
+
+```c
+switch (<expression>) {
+    case <expression-1>:
+    case <expression-2>:
+    ...
+    case <expression-n>:
+        <statements>
+        break; /* Not required, but a good idea */
+    case <expression>:
+        ...
+    default:
+        <statements>
+}
+```
+
+Totuși, odată ce execuția a sărit la un anumit punct, programul va continua să ruleze de la acel punct înainte. De exemplu, dacă response = 'Y' în programul de mai jos, programul va afișa "Yes", urmat de "No", urmat de "Huh?"
+
+```c
+switch (response) {
+    case 'Y':
+    case 'y':
+        printf("Yes\n");
+    case 'N':
+    case 'n':
+        printf("No\n");
+    default:
+        printf("Huh?\n");
+}
+```
+
+Pentru a evita acest lucru, aproape întotdeauna vrei să pui instrucțiuni break după fiecare case:
+
+```c
+switch (response) {
+    case 'Y':
+    case 'y':
+        printf("Yes\n");
+        break;
+    case 'N':
+    case 'n':
+        printf("No\n");
+        break;
+    default:
+        printf("Huh?\n");
+}
+```
+
+### Bucla While
+
+Evaluează testul înainte de fiecare buclă, deci poate executa zero ori dacă condiția este inițial falsă. Necesită întotdeauna parantezele ca if-ul.
+
+```c
+while (<expression>) {
+    <statements>
+}
+```
+
+### Bucla Do-While
+
+Ca un while, dar cu condiția de test la sfârșitul buclei. Corpul buclei va executa întotdeauna cel puțin o dată.
+
+```c
+do {
+    <statements>
+} while (<expression>)
+```
+
+### Bucla For
+
+Bucla for din C este cea mai generală construcție de buclă. Antetul buclei conține trei părți: o inițializare, o condiție de continuare și o acțiune.
+
+```c
+for (<Initialization>; <Continuation Condition>; <Action>) {
+    <statements>
+}
+```
+
+Inițializarea se întâmplă o dată înainte ca corpul buclei să fie introdus. Bucla continuă să ruleze atât timp cât condiția de continuare rămâne adevărată (non-zero). După fiecare execuție a buclei, acțiunea este executată. Următorul exemplu execută de 10 ori numărând de la 0..9.
+
+```c
+for (i = 0; i < 10; i++) {
+    ...
+}
+```
+
+Este idiommatic în C să începi de la 0 și să folosești < în test. În alte limbaje ai putea începe de la 1 și să folosești <= în test. Vezi multe serii de tipul 0..(un_număr-1).
+
+Fiecare din cele trei părți poate fi alcătuită din multiple instrucțiuni separate de virgule. Regula este că instrucțiunile separate de virgule sunt executate în ordine, de la stânga la dreapta. Au o reputație proastă, deci folosește-le cu parsimonie.
+
+Acest exemplu inversează un string în loc. (Strlen este o funcție furnizată în una din bibliotecile C care returnează lungimea unui string.)
+
+```c
+for (i = 0, j = strlen(s) - 1; i < j; i++, j--) {
+    temp = s[i];
+    s[i] = s[j];
+    s[j] = temp;
+}
+```
+
+### Break
+
+C permite două mecanisme pentru a ieși din bucle. Instrucțiunea break va muta controlul în afara unei bucle sau instrucțiuni switch. Din punct de vedere stilistic, ambii acești operatori au potențialul să fie un pic vulgari. Ai grijă să nu produci cod nelizibil. Ar trebui să apelez la un break doar dacă, așa cum se întâmplă uneori, testul poate apărea doar undeva în mijlocul instrucțiunilor din corpul buclei.
+
+```c
+while (<expression>) {
+    ...
+    if (SomethingAwful)
+        break;
+    ...
+    ...
+    ...
+}
+.../* Control ends up here on a break. */
+```
+
+Break nu iese dintr-un if. Funcționează doar în bucle și switch-uri. Să greșești aceasta poate cauza niște erori spectaculoase.
+
+### Continue
+
+Instrucțiunea continue face ca controlul să sară la sfârșitul buclei, sărind efectiv peste orice cod de sub continue. Ca și cu break, aceasta are o reputație de a fi vulgară, deci folosește-o cu parsimonie. Aproape întotdeauna poți obține efectul mai clar folosind un if în bucla ta.
+
+```c
+while (<expression>) {
+    ...
+    if (SomethingAwful)
+        continue;
+    ...
+    ...
+    ...
+    /* Control ends up here on a continue. */
+}
+```
+
+## Funcții
+
+În C, nu există proceduri, doar funcții. Funcțiile sunt întotdeauna declarate la cel mai exterior nivel lexical. Este ilegal să imbricii definițiile de funcții. Funcția numită "main" este locul unde începe execuția programului. Unii programatori le place să își înceapă numele funcțiilor cu litere mari, folosind litere mici pentru variabile și parametri. Iată o funcție C simplă:
+
+```c
+int UselessFunction(int x, char y, struct node *z)
+{
+    int a;      /* These are local variables */
+    char *b;
+    ...
+}
+```
+
+Toți parametrii sunt pasați prin valoare. Depinde de programator să potrivească numărul și tipurile parametrilor corect când apelează funcția, deși compilatorul ar trebui să dea o avertizare dacă unele tipuri nu se potrivesc.
+
+Înainte de ANSI C, declarația parametrilor obișnuia să arate ca următoarea. În acele zile, de fapt nu trebuia să declari tipurile parametrilor. Dacă declarația era omisă, compilatorul ar presupune doar că era un int. Această laxitate a dus la atât de multe erori pe care compilatorul le-ar fi putut prinde încât a fost abandonată cu revizia ANSI a limbajului. Pentru compatibilitatea înapoi, majoritatea compilatoarelor vor accepta încă stilul vechi, dar nu este recomandat. Și dacă vreodată îl folosești, ceilalți programatori te vor arăta cu degetul și vor râde în spatele tău.
+
+```c
+int OldStyleFunction(x,y,z)  /* Specify return type and params */
+int x;                       /* Parameter types are given here */
+char y;                      /* but not checked later. */
+struct node *z;
+{
+    ...
+}
+```
+
+## C și neantul — void
+
+"Void" este un tip formalizat în ANSI C care înseamnă "nimic". Pentru a indica că o funcție nu returnează nimic, listează void ca tipul de retur. De asemenea, prin convenție, un pointer care nu indică către niciun tip particular este declarat ca (void*). Uneori (void*) este folosit pentru a implementa ADT-uri unde (void*) se traduce aproximativ în "aceasta indică către ceva, dar nu îți spun (clientului) ce." Dacă o funcție nu ia niciun parametru, lista sa de parametri este goală, este politicos să o listezi ca void de asemenea.
+
+```c
+int TakesNothingAndReturnsAnInt(void) {
+    ...
+}
+```
+
+## Pasarea funcțiilor ca parametri
+
+C îți permite să iei adresa unei funcții și să apelezi funcția mai târziu folosind acea adresă. Există unele utilizări inteligente ale acestui lucru care implică stocarea pointerilor de funcții în structuri de date, sau pasarea lor la alte funcții. În acest exemplu, funcția "map" va aplica funcția "f" la fiecare element al array-ului "a".
+
+```c
+#include <stdio.h>
+#define MAXSIZE 10
+
+int AddOne(int x)
+{
+    return ++x;
+}
+
+int Square(int x)
+{
+    return (x*x);
+}
+
+void Map(int a[], int (*f)(int))
+/* f is a pointer to a function which takes and int */
+/* and returns an int */
+{
+    int i;
+    for (i=0; i<MAXSIZE; i++) {
+        a[i] = (*f)(a[i]); /* Call the function that f points to */
+    }
+}
+
+main()
+{
+    int i;
+    int theArray[10];
+    
+    for (i=0; i<MAXSIZE; i++) {
+        theArray[i] = i;
+    }
+    
+    Map(theArray, AddOne);  /* Pass pointer to AddOne */
+    Map(theArray, Square);  /* Pass pointer to Square */
+}
+```
+
+## Simularea apelării prin referință
+
+Deoarece C pasează argumente la funcții prin valoare, nu există o modalitate directă pentru funcția apelată să altereze o variabilă din funcția apelantă. De exemplu, o rutină de sortare ar putea schimba două elemente care nu sunt în ordine cu o funcție numită swap. Nu este suficient să scrii:
+
+```c
+Swap(a, b);
+```
+
+unde funcția Swap este definită ca:
+
+```c
+void Swap(int x, int y)  /* Wrong! */
+{
+    int temp;
+    temp = x;
+    x = y;      /* just changes local copy */
+    y = temp;
+}
+```
+
+Pentru că parametrii sunt pasați prin valoare, Swap nu poate afecta argumentele a și b din rutina care a apelat-o. Funcția de mai sus doar schimbă copiile lui a și b din rutina Swap însăși.
+
+Deși C nu oferă parametri de apel prin referință, oferă instrumente care permit programatorului să obțină același efect. Pentru a pasa un obiect X ca parametru de referință, programatorul pasează de obicei adresa lui X. Cu alte cuvinte, un pointer la X este trimis. Aceasta se realizează folosind operatorul address-of &. Pe partea de primire, operatorul de dereferențiere * este folosit pentru a urma pointerul înapoi la obiectul original X. Iată un exemplu de apel corect la o funcție Swap:
+
+```c
+Swap(&a, &b);
+```
+
+Deoarece operatorul & produce adresa unei variabile, &a este un pointer la a. În Swap însăși, parametrii sunt declarați să fie pointeri, și operanzii sunt accesați indirect prin ei.
+
+```c
+Swap(int *a, int *b)
+{
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+```
+
+Următorul exemplu ilustrează pasarea unui parametru de referință de două ori. În acest exemplu, Swap este apelat pentru a schimba x și y. După ce Swap execută, IncrementAndSwap este apelat. IncrementAndSwap pasează a și b (în opoziție cu &a și &b) la Swap. Aceasta este pentru că ambele aceste variabile sunt deja pointeri.
+
+```c
+#include <stdio.h>
+
+main()
+{
+    int x = 10;
+    int y = 20;
+    
+    Swap(&x, &y);
+    printf("%d %d\n", x, y);
+    
+    increment_and_swap(&x, &y);
+    printf("%d %d\n", x, y);
+}
+
+Swap(int *a, int *b)
+{
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+IncrementAndSwap(int *a, int *b)
+{
+    (*a)++;
+    (*b)++;
+    Swap(a, b); /* don't need & here since a and b are already */
+                /* int*'s */
+}
+```
+
+## Apelul prin referință și pointeri
+
+Simularea parametrilor de referință când pasezi pointeri folosește exact aceleași tehnici arătate mai sus, dar sintaxa este în mod special confuză pentru că trebuie să te ocupi cu pointeri la pointeri. Dacă obiectul este un pointer, atunci adresa sa va fi un pointer la un pointer. Dacă vrei să pasezi un obiect ca parametru de referință, pasează adresa acelui obiect. S-ar putea să ai nevoie sau să nu ai nevoie să folosești operatorul & în funcție de dacă expresia pe care o ai deja reprezintă un pointer la obiectul de interes.
+
+Următoarea este o funcție C recursivă care inserează un caracter într-o listă legată sortată. Este un exemplu de folosire a parametrilor care sunt pointeri la pointeri.
+
+```c
+struct listrec {
+    char data;
+    struct listrec *next;
+};
+
+main()
+{
+    struct listrec *head;
+    head = NULL;
+    
+    insert(&head, 'a'); /* Pass the address of head */
+    insert(&head, 'b');
+}
+
+void Insert(struct listrec **headRef, char c)
+/* L is a pointer to a pointer */
+{
+    if ((!*headRef) ||
+        (c < (*headRef)->data)) { /* Dereference headRef before use */
+        InsertFront(headRef, c); /* Here it's already the right type. */
+    } else {
+        insert(&((*headRef)->next), c);
+        /* Dereference headRef to get a pointer. Follow the pointer
+           to a record and get its next field. Then take the
+           address of the next field. */
+    }
+}
+
+void InsertFront(struct listrec **headRef, char c)
+{
+    struct listrec *temp;
+    temp = (struct listrec *)malloc(sizeof(struct listrec));
+    temp->data = c;
+    temp->next = *headRef;
+    *headRef = temp;
+}
+```
+
+## Malloc
+
+Funcția malloc, de mai sus în InsertFront, este folosită pentru a aloca spațiu în heap. Este foarte similară cu funcția new din Pascal. Diferența este că malloc ia un parametru întreg care reprezintă numărul de bytes necesari în loc de un tip. Operatorul de timpul compilării sizeof este util aici, deoarece returnează câți bytes sunt folosiți de un tip particular. Funcția free îndeplinește același rol ca și dispose.
+
+Ca un alt exemplu, iată cod recursiv pentru a insera elemente într-un arbore binar fără noduri duplicat.
+
+```c
+#include <stdio.h>
+
+struct node {
+    char which;
+    int howmany;
+    struct node *smaller, *bigger;
+};
+
+static void Insert(struct node **root, char c)
+{
+    if (!*root) {
+        *root= (struct node *)malloc(sizeof(struct node));
+        (*root)->which = c;
+        (*root)->howmany = 1;
+        (*root)->smaller = (*root)->bigger = NULL;
+    }
+    else if ((*root)->which == c) {
+        (*root)->howmany++;
+    }
+    else if ((*root)->which > c) {
+        Insert(&((*root)->smaller), c);
+    }
+    else {
+        Insert(&((*root)->bigger), c);
+    }
+}
+
+static void show(struct node *root)
+{
+    if (root != NULL) {
+        show(root->smaller);
+        printf("%c: %d \n", root->which, root->howmany);
+        show(root->bigger);
+    }
+}
+
+main()
+{
+    struct node *root;
+    char c;
+    
+    root = NULL;
+    while ((c = getchar()) != EOF) {
+        Insert(&root, c);
+    }
+    show(root);
+}
+```
+
+## Array-uri avansate în C
+
+În C, un array este format prin aranjarea tuturor elementelor în mod contiguu în memorie. Sintaxa cu paranteze pătrate poate fi folosită pentru a se referi la elementele din array. Array-ul ca întreg este menționat prin adresa primului element.
+
+```c
+{
+    int array[6];
+    int sum = 0;
+    sum += array[0] + array[1]; // refer to elements using []
+}
+```
+
+Programatorul poate să se refere la elementele din array cu sintaxa simplă [] precum array[1]. Această schemă funcționează prin combinarea adresei de bază a întregului array cu indexul pentru a calcula adresa de bază a elementului dorit din array. Necesită doar puțină aritmetică. Fiecare element ocupă un număr fix de bytes care este cunoscut la timpul compilării. Deci adresa celui de-al n-lea element din array (indexare bazată pe 0) va fi la un offset de (n * element_size) bytes de la adresa de bază a întregului array.
+
+```
+adresa celui de-al n-lea element = adresa_elementului_0 + (n * dimensiunea_elementului_în_bytes)
+```
+
+Sintaxa cu paranteze pătrate [] se ocupă cu această aritmetică de adrese pentru tine, dar este util să știi ce face. [] ia indexul întreg, înmulțește cu dimensiunea elementului, adaugă offset-ul rezultat la adresa de bază a array-ului și în final dereferențiază pointerul rezultat pentru a ajunge la elementul dorit.
+
+### Sintaxa '+'
+
+Într-o sintaxă înrudită, un + între un pointer și un întreg face aceeași calculație de offset, dar lasă rezultatul ca pointer. Sintaxa cu paranteze pătrate dă cel de-al n-lea element în timp ce sintaxa + dă un pointer la cel de-al n-lea element.
+
+Deci expresia (intArray + 3) este un pointer la întregul intArray[3]. (intArray + 3) este de tipul (int*) în timp ce intArray[3] este de tipul int. Cele două expresii diferă doar prin aceea că pointerul este dereferențiat sau nu. Deci expresia (intArray + 3) este exact echivalentă cu expresia (&(intArray[3])). De fapt acele două probabil se compilează în exact același cod. Ambele reprezintă un pointer la elementul de la indexul 3.
+
+Orice expresie [] poate fi scrisă cu sintaxa + în schimb. Trebuie doar să adăugăm dereferențierea pointerului. Deci intArray[3] este exact echivalent cu *(intArray + 3). Pentru majoritatea scopurilor, este cel mai ușor și mai lizibil să folosești sintaxa []. Din când în când + este convenabil dacă aveai nevoie de un pointer la element în loc de elementul în sine.
+
+### Pointer++
+
+Dacă p este un pointer la un element într-un array, atunci (p+1) indică către următorul element din array. Codul poate exploata aceasta folosind construcția p++ pentru a muta un pointer peste elementele într-un array. Nu ajută lizibilitatea deloc, deci nu pot recomanda tehnica, dar s-ar putea să o vezi în cod scris de alții.
+
+Iată o secvență de versiuni ale strcpy scrise în ordine: de la cel mai verbos la cel mai criptic. În primul, bucla while normal simplă este de fapt cam complicată pentru a se asigura că caracterul null de terminare este copiat. Al doilea elimină acea complicație mutând atribuirea în test. Ultimele două sunt drăguțe (și demonstrează folosirea ++ pe pointeri), dar nu sunt într-adevăr tipul de cod pe care vrei să îl menții. Dintre cele patru, cred că al doilea este cel mai bun din punct de vedere stilistic. Cu un compilator inteligent, toate patru se vor compila în practic același cod cu aceeași eficiență.
+
+```c
+// Unfortunately, a straight while or for loop won't work.
+// The best we can do is use a while (1) with the test
+// in the middle of the loop.
+void strcpy1(char dest[], const char source[])
+{
+    int i = 0;
+    while (1) {
+        dest[i] = source[i];
+        if (dest[i] == '\0') break; // we're done
+        i++;
+    }
+}
+
+// Move the assignment into the test
+void strcpy2(char dest[], const char source[])
+{
+    int i = 0;
+    while ((dest[i] = source[i]) != '\0') {
+        i++;
+    }
+}
+
+// Get rid of i and just move the pointers.
+// Relies on the precedence of * and ++.
+void strcpy3(char dest[], const char source[])
+{
+    while ((*dest++ = *source++) != '\0') ;
+}
+
+// Rely on the fact that '\0' is equivalent to FALSE
+void strcpy4(char dest[], const char source[])
+{
+    while (*dest++ = *source++) ;
+}
+```
+
+### Efectele tipului de pointer
+
+Atât [] cât și + folosesc implicit tipul de timpul compilării al pointerului pentru a calcula element_size care afectează aritmetica de offset. Când te uiți la cod, este ușor să presupui că totul este în unitățile de bytes.
+
+```c
+int *p;
+p = p + 12; // at run-time, what does this add to p? 12?
+```
+
+Codul de mai sus nu adaugă numărul 12 la adresa din p - aceea ar incrementa p cu 12 bytes. Codul de mai sus incrementează p cu 12 int-uri. Fiecare int ia 4 bytes, deci la timpul execuției codul va incrementa efectiv adresa din p cu 48. Compilatorul calculează totul aceasta bazat pe tipul pointerului.
+
+Folosind conversii, următorul cod într-adevăr doar adaugă 12 la adresa din pointerul p. Funcționează spunând compilatorului că pointerul indică către char în loc de int. Dimensiunea char-ului este definită să fie exact 1 byte (sau orice cea mai mică unitate adresabilă este pe calculator). Cu alte cuvinte, sizeof(char) este întotdeauna 1. Apoi convertim (char*) rezultat înapoi la un (int*). Poți folosi conversia așa pentru a schimba codul pe care îl generează compilatorul. Compilatorul doar urmează orb ordinele tale.
+
+```c
+p = (int*) ( ((char*)p) + 12);
+```
+
+## Array-uri și pointeri
+
+Un efect al schemei de array C este că compilatorul nu distinge în mod semnificativ între array-uri și pointeri - ambele arată doar ca pointeri. În următorul exemplu, valoarea intArray este un pointer la primul element din array deci este un (int*). Valoarea variabilei intPtr este de asemenea (int*) și este setată să indice către un singur întreg i. Deci care este diferența între intArray și intPtr? Nu prea mult în ceea ce privește compilatorul. Ambele sunt doar pointeri (int*), și compilatorul este perfect fericit să aplice sintaxa [] sau + la oricare. Este responsabilitatea programatorului să se asigure că elementele la care se referă o operație [] sau + sunt într-adevăr acolo. Într-adevăr este doar aceeași regulă veche că C nu face nicio verificare a limitelor.
+
+C se gândește la întregul singular i ca doar un fel de array degenerat de dimensiunea 1.
+
+```c
+{
+    int intArray[6];
+    int *intPtr;
+    int i;
+    
+    intPtr = &i;
+    
+    intArray[3] = 13;   // ok
+    intPtr[0] = 12;     // odd, but ok. Changes i.
+    intPtr[3] = 13;     // BAD! There is no integer reserved here!
+}
+```
+
+## Assert
+
+Referințele array în afara limitelor sunt o formă extrem de comună de eroare C la timpul execuției. Poți folosi funcția assert() pentru a împrăștia codul tău cu propriile verificări de limite. Câteva secunde punând instrucțiuni assert îți pot economisi ore de depanare.
+
+```c
+#include <assert.h>
+{
+    int ints[MAX_INTS];
+    i = foo(<something complicated>); // i should be in bounds,
+                                     // but is it really?
+    assert(i>=0);
+    assert(i<MAX_INTS);
+    ints[i] = 0;
+}
+```
+
+## Numele array-urilor sunt Const
+
+O distincție subtilă între un array și un pointer este că pointerul care reprezintă adresa de bază a unui array nu poate fi schimbat în cod. Tehnic, adresa de bază a array-ului este un pointer const. Constrângerea se aplică la numele array-ului unde este declarat în cod - variabila ints în exemplul de mai jos.
+
+```c
+{
+    int ints[100];
+    int *p;
+    int i;
+    
+    array = NULL;           // no, cannot change the base addr ptr
+    array = &i;             // no
+    array = array + 1;      // no
+    array++;                // no
+    
+    p = array;              // ok, p is a regular pointer which can be changed
+                           // here it is getting a copy of the value of ARRAY
+    p++;                    // ok, p can still be changed (and array cannot)
+    p = NULL;               // ok
+    p = &i;                 // ok
+    
+    foo(array);             // ok (possible foo definitions are below)
+}
+```
+
+Parametrii array sunt pasați ca pointeri. Următoarele două definiții ale foo arată diferit, dar pentru compilator înseamnă exact același lucru. Este preferabil să folosești orice sintaxă este mai precisă pentru lizibilitate. Dacă pointerul care vine într-adevăr este adresa de bază a unui array întreg, atunci folosește [].
+
+```c
+void foo(int arrayParam[]) {
+    arrayParam = NULL; // Silly but valid. Just changes the local pointer
+}
+
+void foo(int *arrayParam) {
+    arrayParam = NULL; // ditto
+}
+```
+
+## Array-uri dinamice
+
+Deoarece array-urile sunt doar zone contigue de bytes, poți aloca propriile array-uri în heap folosind malloc. Următorul cod alocă două array-uri de 1000 int-uri - unul în stivă în mod obișnuit, și unul în heap folosind malloc. În afară de alocările diferite, cele două sunt sintactic similare în utilizare.
+
+```c
+{
+    int a[1000];
+    int *b;
+    
+    b = malloc(sizeof(int) * 1000);
+    
+    a[123] = 13;    // Just use good ol' [] to access elements
+    b[123] = 13;    // in both arrays.
+    
+    free(b);
+}
+```
+
+Există câteva diferențe cheie:
+
+### Avantajele de a fi în heap
+
+• Dimensiunea (în acest caz 1000) poate fi definită la timpul execuției. Nu la fel pentru un array ca "a".
+
+• Array-ul va exista până când este dealocat explicit cu un apel la free().
+
+• Poți schimba dimensiunea array-ului după voie la timpul execuției folosind realloc(). Următoarea schimbă dimensiunea array-ului la 2000. Realloc() se ocupă cu copierea elementelor vechi.
+
+```c
+...
+b = realloc(b, sizeof(int) * 2000);
+```
+
+### Dezavantajele de a fi în heap
+
+• Trebuie să îți amintești să aloci array-ul, și trebuie să o faci corect.
+
+• Trebuie să îți amintești să îl dealoci exact o dată când ai terminat cu el, și trebuie să faci și asta corect.
+
+• Cele două dezavantaje de mai sus au același profil de bază: dacă le greșești, codul tău încă arată bine. Se compilează frumos. Chiar rulează pentru cazuri mici, dar pentru unele cazuri de intrare doar se prăbușește neașteptat pentru că memoria aleatorie este suprascrisă undeva ca fața zâmbitoare. Acest fel de eroare "spărgător de memorie aleatoare" poate fi o adevărată ordalie de urmărit.
+
+## Anexa: Bibliotecile C
+
+Darul meu pentru comunitatea de programare C: O listă de o pagină cu detalii de care sunt sătul să le caut...
+
+### Precedența și asociativitatea
+
+| Operatori | Asociativitate |
+|-----------|----------------|
+| `function-call()` `[]` `->` `.` | S la D |
+| `!` `~` `++` `--` `+` `-` `*(ptr)` `sizeof` (amintește-ți: toți operatorii unari sunt aceiași) | D la S |
+| `*` `/` `%` (operatorii binari aritmetici) | S la D |
+| `+` `-` | S la D |
+| `<` `<=` `>` `>=` | S la D |
+| `==` `!=` | S la D |
+| și apoi în ordine: `&` `^` `|` `&&` `||` | S la D |
+| `=` și toate variantele sale | D la S |
+| `,` cea mai mică precedență. Un operator pe care doar un tocilar l-ar putea iubi. | S la D |
+
+O combinație care nu funcționează niciodată corect fără paranteză: `*structptr.field`
+
+### stdio.h
+
+```c
+FILE *fopen(const char *fname, const char*mode); // "r"read,"w" write,"a"append, NULL on err
+int fclose(FILE *file); // Returns EOF on error.
+int fgetc(FILE *in); // Returns next char, or EOF token if no more.
+int fputc(int ch, FILE *out); // Writes char to file, returns EOF on err.
+int ungetc(int ch, FILE *in); // Push one fgetc char back, may not ungetc EOF, EOF on err
+```
+
+#### printf
+`%d` int, `%s` (char*), `%f` double, `%e` (double, scientific notation)
+
+FILE*-uri standard, deschise automat: stdin, stdout, stderr
+
+ex: `printf("%d %s\n", 4, "string");` ==> printează: 4 string
+
+printf merge la stdout în mod implicit, fprintf(FILE *out,...) ia un parametru FILE *
+
+### ctype.h
+
+Macro-uri pentru testarea tipului unui caracter: `isalpha(ch)` alfabetic mare sau mic, `islower(ch)`, `isupper()`, `isspace(ch)` tab spațiu newline etc., `isdigit(ch)`
+
+`tolower(ch)` și `toupper(ch)` conversii - funcționează pe orice char, nu e nevoie să testezi primul
+
+### string.h
+
+Niciuna din rutinele de string nu alocă memorie, clientul este responsabil să se asigure că există suficient spațiu. Majoritatea acestora returnează string-ul tocmai scris care este în mare parte inutil.
+
+```c
+size_t strlen(const char* string); // ret numărul de chars. strlen("abc")==3
+char *strcpy(char *dest, const char* source); // Copiază un string. Amintește-ți: Merge D la S ca =.
+char *strncpy(char *dest, const char* source, int n); // Copiază cel mult n chars.
+char *strcat(char *dest, const char* source); // Adaugă la sfârșitul dest.
+int strcmp(const char *a, const char *b); // Compară și returnează <0:a<b, >0:a>b, ==0:a==b
+// amintește-ți: să presupunem că b este 0, returnează locul relativ al lui a.
+char *strchr(const char* str, char ch); // ret ptr la prima apariție a ch în str, NULL dacă nu
+void* memcpy(void *dest, const void *source, size_t n); // Copiază bytes care nu se suprapun
+void* memmove(void *dest, const void *source, size_t n); // Funcționează chiar dacă se suprapun.
+```
+
+Aceste două sunt probabil implementate eficient pe orice mașină pe care ești.
+
+### stdlib.h
+
+```c
+int rand(void); // returnează numere pseudo-aleatoare (non-negative)
+void srand(unsigned int seed); // Setează seed pentru rand. Folosește valoarea time(NULL) din <time.h>.
+void *malloc(size_t size); // alocă bloc heap, NULL la eșec. size_t ess. = unsigned long
+void *realloc(void *block, size_t size); // mută blocul la noua dimensiune, Returnează noul ptr de folosit
+void free(void *block); // Returnează un bloc malloc sau realloc la heap
+void exit(int status); // Oprește programul. Pasează EXIT_SUCCESS sau EXIT_FAILURE.
+
+// compare folosit în bsearch și qsort: int cmp(const void *key, const void *x) ret ca strcmp
+void *bsearch(const void *key, const void *base, size_t len, size_t elem_size, cmp above);
+// returnează adresa elementului găsit, sau NULL dacă nu este găsit
+void qsort(void *base, size_t len, size_t elem_size, cmp fn above);
+// convenții nume var: "len" sau "n" = numărul de elemente, "size" = numărul de bytes
+```
+
+---
+
+Aceasta completează traducerea documentului "Essential C" în limba română. Documentul acoperă toate aspectele fundamentale ale limbajului C, de la tipurile de date de bază până la concepte avansate precum pointerii, managementul memoriei și utilizarea bibliotecilor standard. Este un ghid complet și concis pentru programatorii care doresc să înțeleagă sau să-și reîmprospăteze cunoștințele despre limbajul C.
