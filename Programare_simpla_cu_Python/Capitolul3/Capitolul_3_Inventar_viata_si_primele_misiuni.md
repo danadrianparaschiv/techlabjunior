@@ -158,3 +158,5 @@ if aur >= 5:
 print("Inventarul final:", inventar)
 print("Viață:", viata, "| Aur:", aur)
 ```
+
+![Exemplu executie](./../imagini/cap3_prima_aventura_rulare.png)
