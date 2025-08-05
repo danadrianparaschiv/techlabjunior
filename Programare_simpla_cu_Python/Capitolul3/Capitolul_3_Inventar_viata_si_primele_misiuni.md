@@ -1,3 +1,5 @@
+![Ilustratie capitol 3](./../imagini/cap3_ilustratie.png)
+
 # Capitolul 3 – Inventar, viață și primele misiuni
 
 ## De ce avem nevoie de inventar și viață în jocuri?
