@@ -6,6 +6,10 @@
 
 Acest document rezumă practic toate caracteristicile majore ale limbajului C. Nu explică cum funcționează lucrurile în detaliu, dar oferă suficiente informații pentru a fi, sperăm, util. A fost bazat inițial pe un document al lui Mike Cleron și acum este un fel de proiect în desfășurare al meu. Am făcut numeroase modificări și îmbunătățiri de-a lungul anilor în timp ce am predat CS107. Vă rog să trimiteți orice feedback la nick@cs.stanford.edu.
 
+## Codul sursa
+
+Pe baza exemplelor din document am generat cateva programe simple, le vei gasi in dosarul [codul_sursa](./codul_sursa/) alaturi de instructiunile pentru compilare si rulare.
+
 ## Istoria Limbajului C
 
 Limbajul de programare C a fost dezvoltat între 1969 și 1973 la Laboratoarele Bell de către Dennis Ritchie, ca o evoluție a limbajului B creat de Ken Thompson. Ritchie a dorit să creeze un limbaj care să combine eficiența limbajelor de nivel scăzut cu flexibilitatea limbajelor de nivel înalt. Numele "C" vine natural după "B", fiind următoarea literă din alfabet. Prima versiune funcțională a fost finalizată în 1972, iar în 1978 Ritchie și Brian Kernighan au publicat cartea legendară "The C Programming Language", care a devenit standardul de facto și a fost cunoscută sub numele de "K&R C".
