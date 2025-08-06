@@ -1186,6 +1186,4 @@ void qsort(void *base, size_t len, size_t elem_size, cmp fn above);
 // convenții nume var: "len" sau "n" = numărul de elemente, "size" = numărul de bytes
 ```
 
----
 
-Aceasta completează traducerea documentului "Essential C" în limba română. Documentul acoperă toate aspectele fundamentale ale limbajului C, de la tipurile de date de bază până la concepte avansate precum pointerii, managementul memoriei și utilizarea bibliotecilor standard. Este un ghid complet și concis pentru programatorii care doresc să înțeleagă sau să-și reîmprospăteze cunoștințele despre limbajul C.
