@@ -1,5 +1,12 @@
 # Cum sa compilezi si sa executi codul sursa
 
+## Windows 11
+
+### Compilarea codului C în Windows 11
+Cea mai populară opțiune gratuită de compilator este [MinGW-w64](https://www.mingw-w64.org), care poate fi instalat prin MSYS2 sau prin pachete standalone. Alternativ, poți folosi [Microsoft Visual Studio Community (gratuit)](https://visualstudio.microsoft.com/vs/community/) care vine cu compilatorul MSVC, sau doar Visual Studio Build Tools dacă preferi să lucrezi din linia de comandă. După instalare, deschizi Command Prompt sau PowerShell, navighezi la directorul unde ai fișierul sursă (de exemplu program.c), și folosești comanda gcc program.c -o program.exe pentru MinGW sau cl program.c pentru MSVC. Compilatorul va genera un fișier executabil (.exe) în același director.
+### Rularea și depanarea
+Pentru a rula programul compilat, pur și simplu tastezi numele executabilului în terminal: program.exe sau .\program.exe. Dacă programul are dependințe externe sau folosește biblioteci specifice, s-ar putea să fie nevoie să adaugi flag-uri suplimentare la compilare (cum ar fi -lm pentru biblioteca matematică). În caz de erori, compilatorul va afișa mesaje detaliate care te vor ajuta să identifici problemele din cod. Pentru proiecte mai complexe, poți folosi un IDE precum Code::Blocks, Dev-C++, sau chiar Visual Studio Code cu extensii pentru C, care oferă highlighting sintactic, auto-complete și debugging integrat, făcând procesul de dezvoltare mult mai eficient.
+
 ## Ubuntu (sau orice alta distributie majora de Linux)
 
 Pentru a compila și rula cod C în Ubuntu, primul pas este instalarea unui compilator C. Cel mai popular și folosit este GCC (GNU Compiler Collection), care poate fi instalat prin comanda sudo apt update && sudo apt install build-essential. Pachetul build-essential include GCC, bibliotecile standard C și alte utilitare necesare pentru dezvoltare. După instalare, poți verifica că totul funcționează corect cu comanda gcc --version. Pentru a compila un program C simplu, salvezi codul în fișier cu extensia .c (de exemplu hello.c), apoi rulezi comanda gcc hello.c -o hello în terminal. Aceasta va crea un fișier executabil numit "hello" care poate fi rulat cu comanda ./hello.
