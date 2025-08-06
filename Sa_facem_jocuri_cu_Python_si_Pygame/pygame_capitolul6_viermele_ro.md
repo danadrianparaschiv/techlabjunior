@@ -1,4 +1,4 @@
-# Capitolul 6 – Wormy
+# Capitolul 6 – Wormy (Viermele)
 
 Wormy este o clonă a jocului Nibbles. Jucătorul începe prin a controla un vierme scurt care se mișcă constant pe ecran. Jucătorul nu poate opri sau încetini viermele, dar poate controla în ce direcție se întoarce. Un măr roșu apare aleatoriu pe ecran, iar jucătorul trebuie să miște viermele astfel încât să mănânce mărul. De fiecare dată când viermele mănâncă un măr, viermele crește mai lung cu un segment și un nou măr apare aleatoriu pe ecran. Jocul se termină dacă viermele se izbiește de el însuși sau de marginile ecranului.
 
