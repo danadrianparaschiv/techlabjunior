@@ -916,6 +916,7 @@ main()
 }
 ```
 
+![Array-uri avansate în C](./imagini/imaginea_002.png)
 Programatorul poate să se refere la elementele din array cu sintaxa simplă [] precum array[1]. Această schemă funcționează prin combinarea adresei de bază a întregului array cu indexul pentru a calcula adresa de bază a elementului dorit din array. Necesită doar puțină aritmetică. Fiecare element ocupă un număr fix de bytes care este cunoscut la timpul compilării. Deci adresa celui de-al n-lea element din array (indexare bazată pe 0) va fi la un offset de (n * element_size) bytes de la adresa de bază a întregului array.
 
 ```
@@ -923,6 +924,8 @@ adresa celui de-al n-lea element = adresa_elementului_0 + (n * dimensiunea_eleme
 ```
 
 Sintaxa cu paranteze pătrate [] se ocupă cu această aritmetică de adrese pentru tine, dar este util să știi ce face. [] ia indexul întreg, înmulțește cu dimensiunea elementului, adaugă offset-ul rezultat la adresa de bază a array-ului și în final dereferențiază pointerul rezultat pentru a ajunge la elementul dorit.
+
+![Array-uri avansate în C](./imagini/imaginea_003.png)
 
 ### Sintaxa '+'
 
@@ -1011,6 +1014,8 @@ C se gândește la întregul singular i ca doar un fel de array degenerat de dim
     intPtr[3] = 13;     // BAD! There is no integer reserved here!
 }
 ```
+
+![Array-uri avansate în C](./imagini/imaginea_004.png)
 
 ## Assert
 
