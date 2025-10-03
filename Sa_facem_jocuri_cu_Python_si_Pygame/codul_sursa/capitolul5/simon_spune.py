@@ -1,4 +1,5 @@
-# Simulare (o clona a jocului Simon)
+# O clona a jocului "Simon spune" varianta cu patrate colorate. 
+# Jocul va da o secventa de apasare pe patrate pe care trebuie sa o reproduceti apasand cu mouse-ul sau cu tastele Q, W, A, S.
 # By Al Sweigart al@inventwithpython.com
 # http://inventwithpython.com/pygame
 # Released under a "Simplified BSD" license
