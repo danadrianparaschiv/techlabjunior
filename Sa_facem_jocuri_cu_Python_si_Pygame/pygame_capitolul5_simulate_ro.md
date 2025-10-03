@@ -1,6 +1,6 @@
-# Capitolul 5 – Simulate
+# Capitolul 5 – Simon spune ...
 
-Simulate este o clonă a jocului Simon. Există patru butoane colorate pe ecran. Butoanele se aprind într-un anumit model aleatoriu, apoi jucătorul trebuie să repete acest model prin apăsarea butoanelor în ordinea corectă. De fiecare dată când jucătorul simulează cu succes modelul, modelul devine mai lung. Jucătorul încearcă să potrivească modelul cât mai mult timp posibil.
+"Simon spune ..." este o clonă a jocului Simon. Există patru butoane colorate pe ecran. Butoanele se aprind într-un anumit model aleatoriu, apoi jucătorul trebuie să repete acest model prin apăsarea butoanelor în ordinea corectă. De fiecare dată când jucătorul simulează cu succes modelul, modelul devine mai lung. Jucătorul încearcă să potrivească modelul cât mai mult timp posibil.
 
 ## Descărcarea Codului
 
