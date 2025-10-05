@@ -1,4 +1,4 @@
-Aceaasta este traducerea in romana a cartii **[Making Games with Python & Pygame](https://inventwithpython.com/pygame/)** de Al Sweigart si o puteti folosi gratuit respectand licenta [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/).
+Aceaasta este traducerea in limba romana a cartii **[Making Games with Python & Pygame](https://inventwithpython.com/pygame/)** de Al Sweigart si o puteti folosi gratuit respectand licenta [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/).
 
 Pagina autorului: https://inventwithpython.com
 
