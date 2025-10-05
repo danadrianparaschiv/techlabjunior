@@ -1,4 +1,4 @@
-![Ilustratie capitol 3](./../imagini/cap3_ilustratie.png)
+![Ilustratie capitol 3](./imagini/cap3_ilustratie.png)
 
 # Capitolul 3 – Inventar, viață și primele misiuni
 
@@ -159,4 +159,4 @@ print("Inventarul final:", inventar)
 print("Viață:", viata, "| Aur:", aur)
 ```
 
-![Exemplu executie](./../imagini/cap3_prima_aventura_rulare.png)
+![Exemplu executie](./imagini/cap3_prima_aventura_rulare.png)
