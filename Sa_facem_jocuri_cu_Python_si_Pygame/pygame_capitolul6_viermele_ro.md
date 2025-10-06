@@ -1,6 +1,15 @@
 # Capitolul 6 – Wormy (Viermele)
 
-Wormy este o clonă a jocului Nibbles. Jucătorul începe prin a controla un vierme scurt care se mișcă constant pe ecran. Jucătorul nu poate opri sau încetini viermele, dar poate controla în ce direcție se întoarce. Un măr roșu apare aleatoriu pe ecran, iar jucătorul trebuie să miște viermele astfel încât să mănânce mărul. De fiecare dată când viermele mănâncă un măr, viermele crește mai lung cu un segment și un nou măr apare aleatoriu pe ecran. Jocul se termină dacă viermele se izbiește de el însuși sau de marginile ecranului.
+Wormy este o clonă a jocului Nibbles (nt. Vezi nota despre Snake/Nibbles mai jos.). Jucătorul începe prin a controla un vierme scurt care se mișcă constant pe ecran. Jucătorul nu poate opri sau încetini viermele, dar poate controla în ce direcție se întoarce. Un măr roșu apare aleatoriu pe ecran, iar jucătorul trebuie să miște viermele astfel încât să mănânce mărul. De fiecare dată când viermele mănâncă un măr, viermele crește mai lung cu un segment și un nou măr apare aleatoriu pe ecran. Jocul se termină dacă viermele se izbiește de el însuși sau de marginile ecranului.
+
+# 💡 Știai că?
+
+> **Snake** este un gen de jocuri video de acțiune în care jucătorul manevrează capătul unei linii care crește continuu, adesea reprezentată ca un șarpe. Jucătorul trebuie să împiedice șarpele să se ciocnească atât de alte obstacole, cât și de el însuși, ceea ce devine din ce în ce mai dificil pe măsură ce șarpele se lungește.
+>
+> Genul își are originea în jocul video arcade competitiv din 1976, *Blockade*, de la Gremlin Industries, unde scopul era să supraviețuiești mai mult decât celălalt jucător. *Blockade* și valul inițial de clone care au urmat erau pur abstracte și nu foloseau terminologia de *șarpe*. Conceptul a evoluat într-o variantă pentru un singur jucător, unde o linie cu cap și coadă devine mai lungă cu fiecare bucată de mâncare consumată — adesea mere sau ouă — crescând probabilitatea de auto-coliziune. Simplitatea și cerințele tehnice reduse ale jocurilor snake au dus la sute de versiuni, unele dintre ele având cuvântul *snake* (șarpe) sau *worm* (vierme) în titlu. Jocul arcade *Tron* din 1982, bazat pe film, include gameplay snake pentru segmentul pentru un singur jucător Light Cycles, iar unele jocuri snake ulterioare împrumută această temă.
+>
+> După ce o versiune numită simplu *Snake* a fost preîncărcată pe telefoanele mobile Nokia în 1998, a existat o revenire a interesului pentru jocurile snake.
+> [Articolul despre istoria jocului Snake(Sarpele) pe Wikipedia (EN).](https://en.wikipedia.org/wiki/Snake_(video_game_genre)).
 
 ## Descărcarea Codului
 
