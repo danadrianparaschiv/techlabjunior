@@ -1,5 +1,6 @@
 # Slide Puzzle, by Al Sweigart al@inventwithpython.com
 # (Pygame) The classic 15-tile slide puzzle.
+# Varianta in limba romana se gaseste la: https://github.com/danadrianparaschiv/techlabjunior/tree/main/Sa_facem_jocuri_cu_Python_si_Pygame
 
 
 
@@ -46,13 +47,13 @@ def main():
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
     DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
-    pygame.display.set_caption('Slide Puzzle')
+    pygame.display.set_caption('Puzzle glisant')
     BASICFONT = pygame.font.Font('freesansbold.ttf', BASICFONTSIZE)
 
     # Store the option buttons and their rectangles in OPTIONS.
-    RESET_SURF, RESET_RECT = makeText('Reset',    TEXTCOLOR, TILECOLOR, WINDOWWIDTH - 120, WINDOWHEIGHT - 90)
-    NEW_SURF,   NEW_RECT   = makeText('New Game', TEXTCOLOR, TILECOLOR, WINDOWWIDTH - 120, WINDOWHEIGHT - 60)
-    SOLVE_SURF, SOLVE_RECT = makeText('Solve',    TEXTCOLOR, TILECOLOR, WINDOWWIDTH - 120, WINDOWHEIGHT - 30)
+    RESET_SURF, RESET_RECT = makeText('Reseteaza',    TEXTCOLOR, TILECOLOR, WINDOWWIDTH - 120, WINDOWHEIGHT - 90)
+    NEW_SURF,   NEW_RECT   = makeText('Joc nou', TEXTCOLOR, TILECOLOR, WINDOWWIDTH - 120, WINDOWHEIGHT - 60)
+    SOLVE_SURF, SOLVE_RECT = makeText('Rezolva',    TEXTCOLOR, TILECOLOR, WINDOWWIDTH - 120, WINDOWHEIGHT - 30)
 
     mainBoard, solutionSeq = generateNewPuzzle(80)
     SOLVEDBOARD = getStartingBoard() # a solved board is the same as the board in a start state.
@@ -60,9 +61,9 @@ def main():
 
     while True: # main game loop
         slideTo = None # the direction, if any, a tile should slide
-        msg = 'Click tile or press arrow keys to slide.' # contains the message to show in the upper left corner.
+        msg = 'Ca sa muti o piesa fa click pe ea sau foloseste sagetile.' # contains the message to show in the upper left corner.
         if mainBoard == SOLVEDBOARD:
-            msg = 'Solved!'
+            msg = 'Rezolvat!'
 
         drawBoard(mainBoard, msg)
 
@@ -107,7 +108,7 @@ def main():
                     slideTo = DOWN
 
         if slideTo:
-            slideAnimation(mainBoard, slideTo, 'Click tile or press arrow keys to slide.', 8) # show slide on screen
+            slideAnimation(mainBoard, slideTo, 'Ca sa muti o piesa fa click pe ea sau foloseste sagetile.', 8) # show slide on screen
             makeMove(mainBoard, slideTo)
             allMoves.append(slideTo) # record the slide
         pygame.display.update()
@@ -303,7 +304,7 @@ def generateNewPuzzle(numSlides):
     lastMove = None
     for i in range(numSlides):
         move = getRandomMove(board, lastMove)
-        slideAnimation(board, move, 'Generating new puzzle...', animationSpeed=int(TILESIZE / 3))
+        slideAnimation(board, move, 'Se genereaza un nou puzzle...', animationSpeed=int(TILESIZE / 3))
         makeMove(board, move)
         sequence.append(move)
         lastMove = move
