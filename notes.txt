@@ -1,9 +1,0 @@
-
-#Cum sa creezi un mediu Python cu conda (Anaconda)
-
-conda create -n envjocuri python=3.8
-conda env list
-conda activate envjocuri
-conda install conda-forge::pygame
-
-#Cum sa instalezi librarii cu pip
