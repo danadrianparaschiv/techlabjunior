@@ -1,3 +1,9 @@
+# Carte in lucru
+
+Cartea orginala are 10 capitole, momentan sunt disponibile primele 8, restul urmeaza sa fie publicate in curand. In aceleasi timp se lucreaza la modificari, adaptari, aduceri la zi in varianta tradusa sau in codul sursa.
+
+# Detalii despre carte
+
 Aceaasta este traducerea in limba romana a cartii **[Making Games with Python & Pygame](https://inventwithpython.com/pygame/)** de Al Sweigart si o puteti folosi gratuit respectand licenta [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/).
 
 Pagina autorului: https://inventwithpython.com
