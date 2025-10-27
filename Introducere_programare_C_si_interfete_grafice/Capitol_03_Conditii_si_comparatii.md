@@ -17,11 +17,11 @@ void main (void)
   
   if (a == 0) 
   { 
-    printf ("a is equal to 0\n"); 
+    printf ("a este egal cu 0\n"); 
   } 
   else 
   { 
-    printf ("a is not equal to 0\n"); 
+    printf ("a nu este egal cu 0\n"); 
   } 
 }
 ```
@@ -91,11 +91,11 @@ void main (void)
   
   while (a < 5) 
   { 
-    printf ("a is equal to %d\n", a); 
+    printf ("a este  %d\n", a); 
     a++; 
   } 
   
-  printf ("a is equal to %d and I've finished\n", a); 
+  printf ("a este egal cu %d si am terminat\n", a); 
 }
 ```
 
@@ -124,11 +124,11 @@ void main (void)
   
   do 
   { 
-    printf ("a is equal to %d\n", a); 
+    printf ("a este egal cu %d\n", a); 
     a++; 
   } while (a < 5); 
   
-  printf ("a is equal to %d and I've finished\n", a); 
+  printf ("a este egal cu %d si am terminat\n", a); 
 }
 ```
 
