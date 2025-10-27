@@ -3,3 +3,9 @@
 Portofoliul nostru acoperă cinci domenii esențiale: programare (de la Scratch vizual la Python), robotică (construirea de roboți din carton și materiale simple),  electronică (circuite sigure cu LED-uri și baterii), experimente tehnice practice și concepte de bază în informatică. Fiecare material urmează o progresie logică adaptată vârstei copilului, de la concepte vizuale pentru cei mici la programare text pentru adolescenți. 
 
 Ceea ce ne diferențiază este abordarea gratuită și accesibilă - credem că educația tehnică de calitate trebuie să fie disponibilă tuturor copiilor români, indiferent de situația economică a familiei. Toate materialele sunt disponibile pentru download pe site-ul nostru, iar părinții pot să le tipărească acasă. Obiectivul nostru pe termen lung este să inspirăm o generație de tineri care să înțeleagă și să modeleze tehnologia, nu doar să o consume, contribuind astfel la viitorul digital al României.
+
+Ne puteti gasi si aici:
+
+https://techlab-junior.blogspot.com
+https://www.youtube.com/@TechLabJunior
+https://www.tiktok.com/@techlabjunior
