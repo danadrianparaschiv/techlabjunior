@@ -7,5 +7,8 @@ Ceea ce ne diferențiază este abordarea gratuită și accesibilă - credem că 
 Ne puteti gasi si aici:
 
 https://techlab-junior.blogspot.com
+
 https://www.youtube.com/@TechLabJunior
+
 https://www.tiktok.com/@techlabjunior
+
