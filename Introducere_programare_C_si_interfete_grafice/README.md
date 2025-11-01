@@ -15,7 +15,7 @@ Cartea este împărțită în două părți principale:
 ### Partea I: Programare C (Capitolele 1-12)
 Primele 12 capitole acoperă fundamentele limbajului C:
 
-1. **Introducere** - Ce este C și de ce să-l învățați
+1. [Introducere](Capitol_01_Introducere.md) - Ce este C și de ce să-l învățați 
 2. **Variabile și aritmetica** - Tipuri de date și operații matematice
 3. **Condiții și comparații** - Instrucțiuni if-else și bucle while
 4. **Control avansat al fluxului** - Bucle for și instrucțiuni switch
