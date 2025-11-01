@@ -15,11 +15,11 @@ Cartea este împărțită în două părți principale:
 ### Partea I: Programare C (Capitolele 1-12)
 Primele 12 capitole acoperă fundamentele limbajului C:
 
-1. **Introducere** - Ce este C și de ce să-l învățați
-2. **Variabile și aritmetica** - Tipuri de date și operații matematice
-3. **Condiții și comparații** - Instrucțiuni if-else și bucle while
-4. **Control avansat al fluxului** - Bucle for și instrucțiuni switch
-5. **Pointeri** - Lucrul cu adrese de memorie
+1. [**Introducere**](Capitol_01_Introducere.md) - Ce este C și de ce să-l învățați 
+2. [**Variabile și aritmetica**](Capitol_02_Variabile_si_aritmetica.md)- Tipuri de date și operații matematice
+3. [**Condiții și comparații**](Capitol_03_Conditii_si_comparatii.md) - Instrucțiuni if-else și bucle while
+4. [**Control avansat al fluxului**](Capitol_04_Control_flux_avansat.md) - Bucle for și instrucțiuni switch
+5. [**Pointeri**](Capitol_05_Pointeri.md) - Lucrul cu adrese de memorie
 6. **Funcții** - Organizarea codului în funcții reutilizabile
 7. **Array-uri și șiruri** - Lucrul cu liste de valori și text
 8. **Biblioteca de șiruri** - Funcții utile pentru manipularea textului
