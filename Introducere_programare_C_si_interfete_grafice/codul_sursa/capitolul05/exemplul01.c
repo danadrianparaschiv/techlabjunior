@@ -5,8 +5,7 @@ Un pointer este doar adresa unui bloc de memorie cu o variabilă în el; asta e 
  la acea variabilă, puteți accesa valoarea din acel bloc de memorie în două moduri: fie cu numele variabilei, fie cu pointerul.
 */
 
-
-void main (void) 
+int main (void) 
 { 
   int a; 
   int *ptr_to_a;
