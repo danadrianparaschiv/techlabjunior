@@ -20,13 +20,13 @@ Primele 12 capitole acoperă fundamentele limbajului C:
 3. [**Condiții și comparații**](Capitol_03_Conditii_si_comparatii.md) - Instrucțiuni if-else și bucle while
 4. [**Control avansat al fluxului**](Capitol_04_Control_flux_avansat.md) - Bucle for și instrucțiuni switch
 5. [**Pointeri**](Capitol_05_Pointeri.md) - Lucrul cu adrese de memorie
-6. **Funcții** - Organizarea codului în funcții reutilizabile
-7. **Array-uri și șiruri** - Lucrul cu liste de valori și text
-8. **Biblioteca de șiruri** - Funcții utile pentru manipularea textului
-9. **Intrarea utilizatorului** - Citirea și procesarea datelor de la utilizator
-10. **Intrare/Ieșire fișiere** - Lucrul cu fișiere
-11. **Mai multe despre tipuri și variabile** - Concepte avansate de tipuri
-12. **Fișiere antet și preprocesor** - Organizarea proiectelor mari
+6. [**Funcții**](Capitol_06_Functii.md) - Organizarea codului în funcții reutilizabile
+7. [**Tablouri și șiruri**](Capitol_07_Tablouri_si_siruri.md) - Lucrul cu tablouri de valori și text
+8. [**Biblioteca de șiruri**](Capitol_08_Biblioteca_manipulare_siruri.md) - Funcții utile pentru manipularea textului
+9. [**Interactiunea cu utilizatorul**](Capitol_09_Interactiunea_cu_utilizatorul.md) - Citirea și procesarea datelor de la utilizator
+10. [**Fișiere de Intrare/Ieșire**](Capitol_10_Fisiere_de_intrare_iesire.md) - Lucrul cu fișiere
+11. [**Mai multe despre tipuri și variabile**](Capitol_11_Mai_multe_despre_tipuri_variabile.md) - Concepte avansate de tipuri
+12. [**Fișiere antet și preprocesor**](Capitol_12_Fisiere_antet_preprocesor.md) - Organizarea proiectelor mari
 
 ### Partea a II-a: Programare GUI cu GTK (Capitolele 13-26)
 Capitolele 13-26 se concentrează pe crearea de interfețe grafice:
