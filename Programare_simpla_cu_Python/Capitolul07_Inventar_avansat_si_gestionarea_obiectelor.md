@@ -148,7 +148,7 @@ def joc_simon():
     print("Repetă secvența de cuvinte exact cum apare.")
     print("Scrie cuvintele separate prin spațiu.")
 
-    directii = ["sus", "jos", "stânga", "dreapta"]
+    directii = ["su", "jo", "st", "dr"] # sus jos stanga dreapta
     secventa = []
     scor = 0
 

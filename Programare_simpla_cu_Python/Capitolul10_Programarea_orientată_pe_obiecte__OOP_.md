@@ -45,6 +45,8 @@ class Aventurier:
 ```python
 jucator = Aventurier("Eliza", 10, 5)
 jucator.salut()
+aldoileajucator = Aventurier("David", 8, 8)
+aldoileajucator.salut()
 ```
 
 ## Adăugăm o clasă pentru monștri
@@ -76,7 +78,6 @@ print(f"Viața lui {jucator.nume} este acum {jucator.viata}.")
 ```
 
 ## Extindem jocul de aventură cu OOP
-
 
 - Jucătorul devine o clasă cu metode: muta(), colecteaza_obiect(), afiseaza_status().
 - Monștrii devin clase cu proprietăți și atacuri diferite.
@@ -123,12 +124,6 @@ jucator.afiseaza_status()
 jucator.colecteaza("poțiune magică")
 ```
 
-## Exerciții pentru tine
-
-
-- Creează un monstru nou (ex. „Goblin” cu 5 viață și 1 atac).
-- Adaugă o metodă vindeca() pentru jucător, care crește viața când folosește o poțiune.
-- Creează un șef final cu viață mare și atac puternic, care apare doar dacă ai o cheie magică.
 
 ## Casetă bonus: Avantajele OOP în jocuri
 
@@ -136,17 +131,11 @@ Poți crea zeci de personaje rapid, fără să repeți codul.
 
 - Poți extinde jocul: adaugi monștri, obiecte, arme, fără să rescrii logica de bază.
 - Codul e mai organizat și ușor de întreținut.
-- 
-Vrei să fac o ilustrație pentru Capitolul 10 (Eliza vs. Lupul întunecat într-o luptă stilizată)?
-Și să integrez capitolul 10 cu cele anterioare într-un PDF actualizat (capitolele 1–10)?
-
-
 - Într-o clasă, avem două tipuri principale de elemente:
-- Proprietăți (atribute) – informații despre obiect (de exemplu: viața jucătorului, aurul monstrului).
-- Metode – acțiuni pe care obiectul le poate face (de exemplu: atacă, vindecă, afișează statusul).
+    - Proprietăți (atribute) – informații despre obiect (de exemplu: viața jucătorului, aurul monstrului).
+    - Metode – acțiuni pe care obiectul le poate face (de exemplu: atacă, vindecă, afișează statusul).
 
 ### Proprietăți (Atribute)
-
 
 - Sunt variabile stocate în obiect.
 - Se definesc de obicei în metoda __init__.
@@ -171,11 +160,11 @@ print(jucator.viata)  # Afișează: 10
 
 ### Metode
 
-
 - Sunt funcții definite într-o clasă.
 - Se apelează folosind numele obiectului urmat de . și numele metodei.
 - Pot folosi și modifica proprietățile obiectului.
 - Parametrul self este mereu prezent – se referă la instanța curentă a clasei.
+
 Exemplu:
 ```python
 class Aventurier:
@@ -257,6 +246,9 @@ class Monstru:
 
 ## Exerciții practice
 
+- Creează un monstru nou (ex. „Goblin” cu 5 viață și 1 atac).
+- Adaugă o metodă vindeca() pentru jucător, care crește viața când folosește o poțiune.
+- Creează un șef final cu viață mare și atac puternic, care apare doar dacă ai o cheie magică.
 - Adaugă o proprietate nouă „nivel” pentru jucător și crește-l când colectează suficient aur.
 - Creează o metodă fugi() pentru jucător, care are o șansă aleatorie să evite un atac al monstrului.
 - Adaugă o metodă raneste() la monștri, care scade viața lor când sunt atacați de jucător.
