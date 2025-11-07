@@ -18,10 +18,12 @@ print("Salut, lume! Eu sunt un mic program Python.")
 
 ### 1) Instalează Python
 
-1. Deschide browserul și caută „Download Python”. Intră pe site-ul oficial **python.org** (butonul mare „Download Python 3.x”).
+1. Deschide browserul și caută „Download Python”. Intră pe site-ul oficial **python.org** (butonul mare „Download Python 3.x”). https://www.python.org/downloads/
 2. Descarcă installerul pentru **Windows** (fișier `.exe`).
 3. **Foarte important:** la primul ecran, bifează **„Add Python to PATH”**.
 4. Apasă **Install Now** și așteaptă finalizarea.
+
+![Pagina Download de pe site-ul python.org](../imagini/download_python.png)
 
 ### 2) Verifică instalarea
 
