@@ -236,6 +236,4 @@ print(scor)
 Bug-urile sunt doar semne că înveți ceva nou!
 Fiecare eroare e o lecție ascunsă care te face mai bun la programare.
 
-Așa că data viitoare când vezi o eroare... zâmbește și spune:
-
-> „Super! Am mai găsit un gândăcel de prins!” 🕵️‍♀️🐞
+Așa că data viitoare când vezi o eroare... zâmbește și spune:„Super! Am mai găsit un gândăcel de prins!” 🕵️‍♀️🐞
