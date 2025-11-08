@@ -213,6 +213,7 @@ joc()
 ```
 
 
+
 ## Structura jocului – cum funcționează aventura completă
 
 Pentru jocul nostru final, vom combina toate mecanicile învățate în capitolele anterioare. Iată cum este organizat jocul pas cu pas:
