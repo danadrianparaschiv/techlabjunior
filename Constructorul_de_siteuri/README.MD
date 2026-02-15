@@ -25,8 +25,8 @@ Cartea se încheie cu un ghid al pașilor următori: cele patru drumuri pe care 
 8. [**Capitolul 8**](Capitolul_08_Proiectul_1_Test_interactiv_quiz_game.md) -  Proiectul 1 — Test interactiv / Quiz Game
 9. [**Capitolul 9**](Capitolul_09_Animatii_CSS_si_JavaScript.md) -  Animații CSS și JavaScript
 10. [**Capitolul 10**](Capitolul_10_Proiectul_2_Colecteaza_stelutele.md) -  Proiectul 2 — Colecteazǎ steluțele / Catch the Stars
-11. [**Capitolul 11**](Capitolul_11_Proiectul_3_Portofoliul meu.md) -  Proiectul 3 — Portofoliul meu
-12. [**Capitolul 12**](Capitolul_12_Ce urmeaza_Drumul_tau_ca_programator.md) -  Ce urmează? Drumul tău ca programator.
+11. [**Capitolul 11**](Capitolul_11_Proiectul_3_Portofoliul_meu.md) -  Proiectul 3 — Portofoliul meu
+12. [**Capitolul 12**](Capitolul_12_Ce_urmeaza_Drumul_tau_ca_programator.md) -  Ce urmează? Drumul tău ca programator.
 
 ## Cum să folosiți această carte
 
