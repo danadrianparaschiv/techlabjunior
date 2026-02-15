@@ -23,6 +23,36 @@ Cartea se încheie cu un ghid al pașilor următori: cele patru drumuri pe care 
 
 ## Cum să folosiți această carte
 
+## Pentru copii (și tineri curioși de orice vârstă)
+
+Această carte a fost scrisă pentru tine — cineva curios, care vrea să înțeleagă cum funcționează site-urile web și să învețe să le construiască singur. Nu ai nevoie de cunoștințe anterioare de programare, de un computer performant sau de vreun program special plătit. Ai nevoie doar de un browser (Chrome, Firefox sau Edge), de un editor de text (recomandăm Visual Studio Code, gratuit) și de dorința de a experimenta.
+
+**Citește capitolele în ordine.** Fiecare capitol construiește pe cel anterior. Dacă sari direct la Capitolul 8 fără să fi parcurs Capitolele 5–7, vei întâlni concepte pe care nu le vei înțelege. Cartea a fost gândită ca o scară — fiecare treaptă te pregătește pentru următoarea.
+
+**Scrie codul cu mâna ta, nu îl copia.** Este tentant să selectezi un bloc de cod și să dai paste. Rezistă tentației. Procesul de a tasta fiecare linie, caracter cu caracter, îți antrenează memoria musculară și te ajută să observi detalii pe care altfel le-ai rata — o virgulă, un punct și virgulă, o paranteză. Greșelile de tastare pe care le vei face nu sunt obstacole, ci oportunități de a învăța să depanezi cod, exact cum fac programatorii profesioniști.
+
+**Experimentează.** După ce un exemplu funcționează, modifică-l. Schimbă o culoare, o dimensiune, un text. Întreabă-te „Ce se întâmplă dacă...?" și testează. Cele mai valoroase lecții vin din momentele în care te abați de la instrucțiuni și descoperi lucruri pe cont propriu. Provocările marcate cu 🚀 sunt special concepute pentru asta.
+
+**Nu te grăbi și nu te descuraja.** Unele concepte vor „click" imediat, altele vor avea nevoie de câteva zile să se așeze. E perfect normal. Dacă un capitol ți se pare greu, ia o pauză, recitește explicațiile și încearcă din nou. Programatorii cu experiență de 20 de ani se confruntă cu același proces — nimeni nu înțelege totul din prima.
+
+---
+
+## Pentru părinți
+
+Copilul dumneavoastră nu are nevoie de ajutor tehnic pentru a parcurge această carte — explicațiile sunt concepute pentru a fi înțelese independent. Ceea ce puteți oferi este la fel de valoros: **încurajare și interes**. Întrebați-l ce a construit astăzi. Rugați-l să vă arate cum funcționează quiz-ul sau jocul cu stele. Exprimați curiozitate sinceră — entuziasmul dumneavoastră este combustibilul motivației sale.
+
+Nu este nevoie să instalați nimic costisitor sau complicat. Tot ce e necesar este un computer cu un browser web modern și editorul gratuit Visual Studio Code, a cărui instalare este explicată în primul capitol. Toate proiectele din carte rulează direct în browser, fără servere, conturi speciale sau abonamente.
+
+Dacă observați că se blochează la un capitol, ajutați-l nu oferind răspunsuri, ci punând întrebări: „Ce crezi că ar trebui să se întâmple?" sau „Ce mesaj de eroare apare?". Procesul de a căuta soluții singur este o abilitate la fel de importantă ca programarea în sine.
+
+---
+
+## Pentru profesori și educatori
+
+Cartea poate fi folosită ca material complementar pentru cursuri de informatică sau ca bază pentru un atelier extracurricular de programare web. Structura pe 12 capitole se pretează unui program semestrial (un capitol pe săptămână) sau unui curs intensiv de vacanță.
+
+Fiecare capitol include elemente concepute pentru mediul educațional: mini-quiz-uri cu răspunsuri detaliate (utilizabile ca evaluări), secțiuni de greșeli frecvente (ideale pentru discuții de grup), provocări cu trei niveluri de dificultate (🟢 ușor, 🟡 mediu, 🔴 avansat) care permit diferențierea pe niveluri de competență, și proiecte practice care pot fi prezentate în fața clasei.
+
 
 ## Convenții folosite în carte
 
