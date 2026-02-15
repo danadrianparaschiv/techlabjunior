@@ -23,7 +23,7 @@ Cartea se încheie cu un ghid al pașilor următori: cele patru drumuri pe care 
 
 ## Cum să folosiți această carte
 
-## Pentru copii (și tineri curioși de orice vârstă)
+### Pentru copii (și tineri curioși de orice vârstă)
 
 Această carte a fost scrisă pentru tine — cineva curios, care vrea să înțeleagă cum funcționează site-urile web și să învețe să le construiască singur. Nu ai nevoie de cunoștințe anterioare de programare, de un computer performant sau de vreun program special plătit. Ai nevoie doar de un browser (Chrome, Firefox sau Edge), de un editor de text (recomandăm Visual Studio Code, gratuit) și de dorința de a experimenta.
 
@@ -37,7 +37,7 @@ Această carte a fost scrisă pentru tine — cineva curios, care vrea să înț
 
 ---
 
-## Pentru părinți
+### Pentru părinți
 
 Copilul dumneavoastră nu are nevoie de ajutor tehnic pentru a parcurge această carte — explicațiile sunt concepute pentru a fi înțelese independent. Ceea ce puteți oferi este la fel de valoros: **încurajare și interes**. Întrebați-l ce a construit astăzi. Rugați-l să vă arate cum funcționează quiz-ul sau jocul cu stele. Exprimați curiozitate sinceră — entuziasmul dumneavoastră este combustibilul motivației sale.
 
@@ -47,7 +47,7 @@ Dacă observați că se blochează la un capitol, ajutați-l nu oferind răspuns
 
 ---
 
-## Pentru profesori și educatori
+### Pentru profesori și educatori
 
 Cartea poate fi folosită ca material complementar pentru cursuri de informatică sau ca bază pentru un atelier extracurricular de programare web. Structura pe 12 capitole se pretează unui program semestrial (un capitol pe săptămână) sau unui curs intensiv de vacanță.
 
