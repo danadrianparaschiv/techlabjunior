@@ -19,7 +19,14 @@ Cartea se încheie cu un ghid al pașilor următori: cele patru drumuri pe care 
 2. [**Capitolul 2**](Capitolul_02_Construieste_cu_HTML.md)- Construiește cu HTML — Scheletul paginii 
 3. [**Capitolul 3**](Capitolul_03_Decoreaza_pagina_cu_CSS_stilul_conteaza.md) - Îmbracă-ți pagina cu CSS — Stilul contează!
 4. [**Capitolul 4**](Capitolul_04_Layout_Pune_lucrurile_la_locul_lor.md) - Layout — Pune lucrurile la locul lor
-
+5. [**Capitolul 5**](Capitolul_05_JavaScript_Pagina_prinde_viata.md) -  JavaScript — Pagina prinde viață!
+6. [**Capitolul 6**](Capitolul_06_Decizii_si_repetitii.md) -  Decizii și repetiții
+7. [**Capitolul 7**](Capitolul_07_DOM_JavaScript_invata_sa_controleze_pagina .md) -  DOM — JavaScript învață să controleze pagina 
+8. [**Capitolul 8**](Capitolul_08_Proiectul_1_Test_interactiv_quiz_game.md) -  Proiectul 1 — Test interactiv / Quiz Game
+9. [**Capitolul 9**](Capitolul_09_Animatii_CSS_si_JavaScript.md) -  Animații CSS și JavaScript
+10. [**Capitolul 10**](Capitolul_10_Proiectul_2_Colecteaza_stelutele.md) -  Proiectul 2 — Colecteazǎ steluțele / Catch the Stars
+11. [**Capitolul 11**](Capitolul_11_Proiectul_3_Portofoliul meu.md) -  Proiectul 3 — Portofoliul meu
+12. [**Capitolul 12**](Capitolul_12_Ce urmeaza_Drumul_tau_ca_programator.md) -  Ce urmează? Drumul tău ca programator.
 
 ## Cum să folosiți această carte
 
