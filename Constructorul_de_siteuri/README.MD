@@ -78,7 +78,6 @@ Cartea conține mai multe tipuri de casete informative:
 > **SFAT**
 > Sugestii și best practices
 
-## Resurse suplimentare
 
 ## Despre autor
 
