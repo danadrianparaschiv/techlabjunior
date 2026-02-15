@@ -82,6 +82,7 @@ Cartea conține mai multe tipuri de casete informative:
 
 ## Despre autor
 
+Dan Paraschiv este initiatorul proiectului TechLab Junior.
 
 ## Licență
 
