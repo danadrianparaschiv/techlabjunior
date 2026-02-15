@@ -87,7 +87,7 @@ Dan Paraschiv este initiatorul proiectului TechLab Junior.
 
 ---
 
-### © 2026 Dan Paraschiv. Toate drepturile rezervate autorului.
+#### © 2026 Dan Paraschiv. Toate drepturile rezervate autorului.
 
 Această lucrare este licențiată sub **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
 
