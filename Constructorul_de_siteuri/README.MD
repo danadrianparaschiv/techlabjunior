@@ -82,6 +82,71 @@ Cartea conține mai multe tipuri de casete informative:
 
 ## Despre autor
 
+
 ## Licență
 
-Conținutul original este licențiat sub Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0).
+---
+
+### © 2026 Dan Paraschiv. Toate drepturile rezervate autorului.
+
+Această lucrare este licențiată sub **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
+
+---
+
+#### Ce înseamnă această licență
+
+Ești liber să:
+
+- **Partajezi** — să copiezi și să redistribui materialul în orice format
+- **Adaptezi** — să remixezi, transformi și construiești pe baza materialului
+
+Cu respectarea următoarelor condiții:
+
+| Condiție | Simbol | Ce presupune |
+|---|---|---|
+| **Atribuire** | BY | Trebuie să acorzi credit autorului original, să incluzi un link către licență și să indici dacă au fost făcute modificări. Poți face acest lucru în orice mod rezonabil, dar nu într-un mod care sugerează că autorul te susține pe tine sau modul în care folosești lucrarea. |
+| **NonComercial** | NC | Nu poți folosi materialul în scopuri comerciale. Nu poți vinde această lucrare sau derivatele ei fără permisiunea scrisă a autorului. |
+| **Distribuire în condiții identice** | SA | Dacă remixezi, transformi sau construiești pe baza materialului, trebuie să distribui contribuțiile tale sub aceeași licență ca originalul. |
+
+---
+
+#### În limbaj simplu
+
+> **Profesori și educatori** — Puteți distribui capitole elevilor, puteți folosi materialul în clasă și puteți crea fișe de lucru bazate pe această carte, cu condiția să menționați sursa.
+>
+> **Elevi și părinți** — Puteți copia, printa și partaja cartea cu prietenii și colegii, gratuit.
+>
+> **Traducători și creatori de conținut** — Puteți traduce sau adapta materialul, dar rezultatul trebuie publicat sub aceeași licență CC BY-NC-SA 4.0 și trebuie să menționați lucrarea originală.
+>
+> **Nimeni** nu poate vinde această carte sau derivatele ei fără acordul scris al autorului.
+
+---
+
+#### Textul complet al licenței
+
+Textul integral al licenței poate fi consultat la:
+
+🔗 [https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
+Rezumatul uman al licenței (în engleză):
+
+🔗 [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+---
+
+#### Drepturi rezervate autorului
+
+Autorul își rezervă dreptul exclusiv de a publica, vinde și distribui această lucrare în format comercial (tipărit, digital sau orice alt format). Licența Creative Commons CC BY-NC-SA 4.0 se aplică exclusiv utilizărilor necomerciale de către terți și nu limitează în niciun fel drepturile autorului asupra propriei lucrări.
+
+Pentru permisiuni care depășesc cadrul acestei licențe (inclusiv utilizare comercială, republicare integrală sau parteneriate editoriale), contactați autorul la: TBD
+
+---
+
+#### Precizare
+
+Această carte a fost creată cu scopul de a face programarea web accesibilă copiilor și tinerilor. Dacă această carte te-a ajutat, cel mai frumos mod de a mulțumi este să o recomanzi altcuiva care ar putea beneficia de ea.
+
+---
+
+*Constructorul de Site-uri — Programare web pentru copii curioși*
+*Prima ediție, 2026*
