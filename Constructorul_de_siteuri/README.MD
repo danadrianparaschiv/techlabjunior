@@ -16,10 +16,9 @@ Cartea se încheie cu un ghid al pașilor următori: cele patru drumuri pe care 
 ## Cuprins
 
 1. [**Capitolul 1**](Capitolul_01_Bine_ai_venit_in_lumea_web.md) - Bine ai venit în lumea web!
-2. [**Variabile și aritmetica**](Capitolul_02_Construieste_cu_HTML.md)- Capitolul 2: Construiește cu HTML — Scheletul paginii 
-3. [**Condiții și comparații**](Capitol_03_Conditii_si_comparatii.md) - Instrucțiuni if-else și bucle while
-4. [**Control avansat al fluxului**](Capitol_04_Control_flux_avansat.md) - Bucle for și instrucțiuni switch
-5. [**Pointeri**](Capitol_05_Pointeri.md) - Lucrul cu adrese de memorie
+2. [**Capitolul 2**](Capitolul_02_Construieste_cu_HTML.md)- Construiește cu HTML — Scheletul paginii 
+3. [**Capitolul 3**](Capitolul_03_Decoreaza_pagina_cu_CSS_stilul_conteaza.md) - Îmbracă-ți pagina cu CSS — Stilul contează!
+4. [**Capitolul 4**](Capitolul_04_Layout_Pune_lucrurile_la_locul_lor.md) - Layout — Pune lucrurile la locul lor
 
 
 ## Cum să folosiți această carte
