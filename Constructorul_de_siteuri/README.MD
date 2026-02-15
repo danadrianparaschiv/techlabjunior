@@ -21,7 +21,7 @@ Cartea se încheie cu un ghid al pașilor următori: cele patru drumuri pe care 
 4. [**Capitolul 4**](Capitolul_04_Layout_Pune_lucrurile_la_locul_lor.md) - Layout — Pune lucrurile la locul lor
 5. [**Capitolul 5**](Capitolul_05_JavaScript_Pagina_prinde_viata.md) -  JavaScript — Pagina prinde viață!
 6. [**Capitolul 6**](Capitolul_06_Decizii_si_repetitii.md) -  Decizii și repetiții
-7. [**Capitolul 7**](Capitolul_07_DOM_JavaScript_invata_sa_controleze_pagina .md) -  DOM — JavaScript învață să controleze pagina 
+7. [**Capitolul 7**](Capitolul_07_DOM_JavaScript_invata_sa_controleze_pagina.md) -  DOM — JavaScript învață să controleze pagina 
 8. [**Capitolul 8**](Capitolul_08_Proiectul_1_Test_interactiv_quiz_game.md) -  Proiectul 1 — Test interactiv / Quiz Game
 9. [**Capitolul 9**](Capitolul_09_Animatii_CSS_si_JavaScript.md) -  Animații CSS și JavaScript
 10. [**Capitolul 10**](Capitolul_10_Proiectul_2_Colecteaza_stelutele.md) -  Proiectul 2 — Colecteazǎ steluțele / Catch the Stars
