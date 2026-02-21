@@ -16,15 +16,15 @@ Această carte prezintă **șapte jocuri diferite** care sunt copii ale unor joc
 
 ## Cuprins
 
-1. [**Capitolul 1**](pygame_capitolul1_ro.md) - Instalare și lucruri de bază
-2. [**Capitolul 2**](pygame_capitolul2_bazele_Pygame_ro.md) - Bazele Pygame
-3. [**Capitolul 3**](pygame_capitolul3_puzzle_de_memorie_ro.md) - Puzzle de Memorie
-4. [**Capitolul 4**](pygame_capitolul4_puzzle_glisant.md) - Puzzle Glisant
-5. [**Capitolul 5**](pygame_capitolul5_simon_spune_ro.md) - Simon Spune
-6. [**Capitolul 6**](pygame_capitolul6_viermele_ro.md) - Viermele
-7. [**Capitolul 7**](pygame_capitolul7_tetromino_ro.md) - Tetromino
-8. [**Capitolul 8**](pygame_capitolul8_veverita_ro.md) - Veverița
-9. [**Capitolul 9**](pygame_capitolul9_impinge_stelele_ro.md) - Împinge Stelele
+1. [**Capitolul 1**](Capitolul01_Instalarea_Python_si_Pygame.md) - Instalarea Python și Pygame
+2. [**Capitolul 2**](Capitolul02_Bazele_Pygame.md) - Bazele Pygame
+3. [**Capitolul 3**](Capitolul03_Puzzle_de_memorie.md) - Puzzle de Memorie
+4. [**Capitolul 4**](Capitolul04_Puzzle_glisant.md) - Puzzle Glisant
+5. [**Capitolul 5**](Capitolul05_Simon_spune.md) - Simon Spune
+6. [**Capitolul 6**](Capitolul06_Viermele.md) - Viermele
+7. [**Capitolul 7**](Capitolul07_Tetromino.md) - Tetromino
+8. [**Capitolul 8**](Capitolul08_Veverita.md) - Veverița
+9. [**Capitolul 9**](Capitolul09_Impinge_stelele.md) - Împinge Stelele
 
 ## Cum să folosiți această carte
 
