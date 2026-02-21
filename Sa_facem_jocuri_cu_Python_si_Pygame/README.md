@@ -84,9 +84,7 @@ Traducerea și adaptarea acestei cărți au fost realizate de Dan Paraschiv, ini
 
 ## Licență
 
-#### © 2026 Al Sweigart & Dan Paraschiv. Toate drepturile rezervate.
-
-Această lucrare este licențiată sub **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
+Această lucrare este licențiată sub *Creative Commons Attribution-Noncommercial-Share Alike 3.0 **.
 
 ---
 
