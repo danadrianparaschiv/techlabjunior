@@ -63,7 +63,7 @@ Un tip de proiect pe care îl facem des presupune măsurarea și stocarea inform
 
 **Adafruit | 27,50 $ | adafruit.com | Cea mai bună pentru: putere de procesare**
 
-![Metro M4](imagini/cap01_imagine04.jpg)
+![Placa de dezvoltare Metro M4 Express](imagini/cap01_imagine04.jpg)
 
 Plăcile Arduino originale foloseau toate microcontrolere AVR. Sunt ușor de folosit, dar le lipsește un pic din forța microcontrolerelor ARM Cortex-M, mai moderne, folosite în multe plăci noi.
 
