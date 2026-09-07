@@ -3,13 +3,13 @@
   "id": "c-introduction",
   "title": "O introducere în programarea C și a interfețelor grafice",
   "author": "Simon Long",
-  "translation": "Traducere în română",
-  "year": null,
+  "translation": "Dan Paraschiv",
+  "year": 2019,
   "license": "CC BY-NC-SA 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-  "description": "Învață variabile, condiții, pointeri și funcții în C. Sunt disponibile cele 12 capitole despre bazele limbajului; partea despre interfețe GTK nu este încă publicată.",
-  "editionNote": "Sunt disponibile primele 12 capitole, despre bazele limbajului C. Capitolele 13–26 despre GTK sunt enumerate în prezentarea originală, dar textele lor nu sunt încă în repository.",
-  "materials": "Calculator cu un compilator C și un editor de text. Exemplele folosesc gcc pe Linux sau Raspberry Pi OS.",
+  "description": "Învață bazele limbajului C, apoi construiește ferestre, butoane și meniuri cu GTK 3. Toate cele 26 de capitole includ exemple și o referință rapidă C.",
+  "editionNote": "Ediția a doua, actualizată pentru GTK 3: 12 capitole despre C, 13 capitole despre interfețe grafice și o referință rapidă C. Exemplele complete și fișierul Glade sunt disponibile în sursa cărții.",
+  "materials": "Calculator cu Linux sau Raspberry Pi OS, compilatorul gcc și un editor de text. Pentru partea a doua ai nevoie de bibliotecile de dezvoltare GTK 3, pkg-config și, la capitolul 25, Glade.",
   "cover": null,
   "edition": {
     "file": "README.md",
@@ -75,6 +75,76 @@
       "id": "c-introduction-12",
       "slug": "12-fisiere-antet-preprocesor",
       "file": "Capitol_12_Fisiere_antet_preprocesor.md"
+    },
+    {
+      "id": "c-introduction-13",
+      "slug": "13-introducere-in-gtk",
+      "file": "Capitol_13_Introducere_in_GTK.md"
+    },
+    {
+      "id": "c-introduction-14",
+      "slug": "14-primul-program-gtk",
+      "file": "Capitol_14_Primul_program_GTK.md"
+    },
+    {
+      "id": "c-introduction-15",
+      "slug": "15-butoane",
+      "file": "Capitol_15_Butoane.md"
+    },
+    {
+      "id": "c-introduction-16",
+      "slug": "16-etichete-si-aspect",
+      "file": "Capitol_16_Etichete_si_aspect.md"
+    },
+    {
+      "id": "c-introduction-17",
+      "slug": "17-aspect-avansat",
+      "file": "Capitol_17_Aspect_avansat.md"
+    },
+    {
+      "id": "c-introduction-18",
+      "slug": "18-introducerea-datelor-in-gui",
+      "file": "Capitol_18_Introducerea_datelor_in_GUI.md"
+    },
+    {
+      "id": "c-introduction-19",
+      "slug": "19-casete-combo-si-list-store",
+      "file": "Capitol_19_Casete_combo_si_list_store.md"
+    },
+    {
+      "id": "c-introduction-20",
+      "slug": "20-vizualizari-arborescente",
+      "file": "Capitol_20_Vizualizari_arborescente.md"
+    },
+    {
+      "id": "c-introduction-21",
+      "slug": "21-meniuri",
+      "file": "Capitol_21_Meniuri.md"
+    },
+    {
+      "id": "c-introduction-22",
+      "slug": "22-dialoguri",
+      "file": "Capitol_22_Dialoguri.md"
+    },
+    {
+      "id": "c-introduction-23",
+      "slug": "23-dialoguri-incorporate",
+      "file": "Capitol_23_Dialoguri_incorporate.md"
+    },
+    {
+      "id": "c-introduction-24",
+      "slug": "24-personalizarea-widgeturilor",
+      "file": "Capitol_24_Personalizarea_widgeturilor.md"
+    },
+    {
+      "id": "c-introduction-25",
+      "slug": "25-glade",
+      "file": "Capitol_25_Glade.md"
+    },
+    {
+      "id": "c-introduction-26",
+      "slug": "26-referinta-rapida-c",
+      "file": "Capitol_26_Referinta_rapida_C.md"
     }
   ],
   "groups": [
@@ -103,6 +173,40 @@
         "c-introduction-10",
         "c-introduction-11",
         "c-introduction-12"
+      ]
+    },
+    {
+      "title": "Primii pași cu GTK",
+      "chapters": [
+        "c-introduction-13",
+        "c-introduction-14",
+        "c-introduction-15",
+        "c-introduction-16",
+        "c-introduction-17"
+      ]
+    },
+    {
+      "title": "Date și meniuri",
+      "chapters": [
+        "c-introduction-18",
+        "c-introduction-19",
+        "c-introduction-20",
+        "c-introduction-21"
+      ]
+    },
+    {
+      "title": "Dialoguri, aspect și Glade",
+      "chapters": [
+        "c-introduction-22",
+        "c-introduction-23",
+        "c-introduction-24",
+        "c-introduction-25"
+      ]
+    },
+    {
+      "title": "Referință C",
+      "chapters": [
+        "c-introduction-26"
       ]
     }
   ]
