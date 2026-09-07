@@ -1,4 +1,4 @@
-name: Publică Limbajul C: un sumar rapid pe staging
+name: "Publică Limbajul C: un sumar rapid pe staging"
 
 on:
   push:

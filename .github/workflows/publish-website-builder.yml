@@ -1,4 +1,4 @@
-name: Publică Constructorul de site-uri pe staging
+name: "Publică Constructorul de site-uri pe staging"
 
 on:
   push:

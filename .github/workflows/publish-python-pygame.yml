@@ -1,4 +1,4 @@
-name: Publică Python și Pygame pe staging
+name: "Publică Python și Pygame pe staging"
 
 on:
   push:

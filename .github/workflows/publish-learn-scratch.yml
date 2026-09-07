@@ -1,4 +1,4 @@
-name: Publică Învață să programezi cu Scratch pe staging
+name: "Publică Învață să programezi cu Scratch pe staging"
 
 on:
   push:

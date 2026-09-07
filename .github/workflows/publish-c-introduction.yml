@@ -1,4 +1,4 @@
-name: Publică Introducere în C pe staging
+name: "Publică Introducere în C pe staging"
 
 on:
   push:

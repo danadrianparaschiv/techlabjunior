@@ -1,4 +1,4 @@
-name: Publică Programare simplă cu Python pe staging
+name: "Publică Programare simplă cu Python pe staging"
 
 on:
   push:
