@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "arduino",
+  "title": "Primii pași cu Arduino",
+  "author": "Echipa revistei HackSpace (Raspberry Pi Press)",
+  "translation": "Dan Paraschiv",
+  "year": 2019,
+  "license": "CC BY-NC-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+  "cover": "imagini/coperta.jpg",
+  "description": "De la primul LED la dispozitive construite de tine. Descoperă programarea și electronica, cu explicații, cod și montaje.",
+  "editionNote": "Ediția originală: 2019. Plăcile, prețurile și versiunile de software din text sunt cele de atunci; păstrăm precizările traducătorului.",
+  "materials": "Pentru primele montaje ai nevoie de un calculator, o placă Arduino, un breadboard și componente. Capitolele 2–13 se parcurg în ordine. Cartea originală se adresează adulților; proiectele cu lipire, tăiere sau scule se fac împreună cu un adult.",
+  "edition": {
+    "file": "README.md",
+    "heading": "## Cum să folosiți această carte"
+  },
+  "chapters": [
+    {
+      "id": "arduino-01",
+      "slug": "1-ghidul-complet-arduino",
+      "file": "Capitolul01_Ghidul_complet_Arduino.md"
+    },
+    {
+      "id": "arduino-02",
+      "slug": "2-adauga-putere-arduino-proiectelor-tale",
+      "file": "Capitolul02_Adauga_putere_Arduino_proiectelor_tale.md"
+    },
+    {
+      "id": "arduino-03",
+      "slug": "3-citirea-datelor-digitale-pe-platforma-arduino",
+      "file": "Capitolul03_Citirea_datelor_digitale.md"
+    },
+    {
+      "id": "arduino-04",
+      "slug": "4-programare-arduino-afisaje-cu-sapte-segmente-si-tablouri-multidimensionale",
+      "file": "Capitolul04_Afisaje_cu_sapte_segmente_si_tablouri_multidimensionale.md"
+    },
+    {
+      "id": "arduino-05",
+      "slug": "5-programare-arduino-multiplexare-operatori-si-patru-afisaje-cu-sapte-segmente",
+      "file": "Capitolul05_Multiplexare_operatori_si_patru_afisaje.md"
+    },
+    {
+      "id": "arduino-06",
+      "slug": "6-programare-arduino-temperatura-umiditate-si-biblioteci",
+      "file": "Capitolul06_Temperatura_umiditate_si_biblioteci.md"
+    },
+    {
+      "id": "arduino-07",
+      "slug": "7-programare-arduino-stive-clase-si-afisaje-derulante",
+      "file": "Capitolul07_Stive_clase_si_afisaje_derulante.md"
+    },
+    {
+      "id": "arduino-08",
+      "slug": "8-programare-arduino-pointeri-si-liste-inlantuite",
+      "file": "Capitolul08_Pointeri_si_liste_inlantuite.md"
+    },
+    {
+      "id": "arduino-09",
+      "slug": "9-programare-arduino-construieste-o-consola-de-jocuri-partea-1-2",
+      "file": "Capitolul09_Construieste_o_consola_de_jocuri_partea_1.md"
+    },
+    {
+      "id": "arduino-10",
+      "slug": "10-programare-arduino-construieste-o-consola-de-jocuri-partea-2-2",
+      "file": "Capitolul10_Construieste_o_consola_de_jocuri_partea_2.md"
+    },
+    {
+      "id": "arduino-11",
+      "slug": "11-programare-arduino-sunet-anvelope-si-intreruperi",
+      "file": "Capitolul11_Sunet_anvelope_si_intreruperi.md"
+    },
+    {
+      "id": "arduino-12",
+      "slug": "12-programare-arduino-copiaza-si-trimite-semnale-infrarosu",
+      "file": "Capitolul12_Copiaza_si_trimite_semnale_infrarosu.md"
+    },
+    {
+      "id": "arduino-13",
+      "slug": "13-programare-arduino-depanarea",
+      "file": "Capitolul13_Depanarea.md"
+    },
+    {
+      "id": "arduino-14",
+      "slug": "14-way-home-meter-contorul-drumului-spre-casa",
+      "file": "Capitolul14_Way_Home_Meter.md"
+    },
+    {
+      "id": "arduino-15",
+      "slug": "15-gradina-hidroponica-de-birou",
+      "file": "Capitolul15_Gradina_hidroponica_de_birou.md"
+    },
+    {
+      "id": "arduino-16",
+      "slug": "16-un-ceas-cu-cuvinte",
+      "file": "Capitolul16_Un_ceas_cu_cuvinte.md"
+    },
+    {
+      "id": "arduino-17",
+      "slug": "17-sintetizator-digital-polifonic-partea-1",
+      "file": "Capitolul17_Sintetizator_digital_polifonic_partea_1.md"
+    },
+    {
+      "id": "arduino-18",
+      "slug": "18-sintetizator-digital-polifonic-partea-2",
+      "file": "Capitolul18_Sintetizator_digital_polifonic_partea_2.md"
+    },
+    {
+      "id": "arduino-19",
+      "slug": "19-ceas-tetris-cu-wifi",
+      "file": "Capitolul19_Ceas_Tetris_cu_WiFi.md"
+    },
+    {
+      "id": "arduino-20",
+      "slug": "20-sa-invatam-lora",
+      "file": "Capitolul20_Sa_invatam_LoRa.md"
+    },
+    {
+      "id": "arduino-21",
+      "slug": "21-construieste-primul-tau-robot-care-merge",
+      "file": "Capitolul21_Construieste_primul_tau_robot_care_merge.md"
+    },
+    {
+      "id": "arduino-22",
+      "slug": "22-construieste-un-sintetizator",
+      "file": "Capitolul22_Construieste_un_sintetizator.md"
+    },
+    {
+      "id": "arduino-23",
+      "slug": "23-inspiratie",
+      "file": "Capitolul23_Inspiratie.md"
+    },
+    {
+      "id": "arduino-24",
+      "slug": "24-teste-de-placi",
+      "file": "Capitolul24_Teste_de_placi.md"
+    },
+    {
+      "id": "arduino-25",
+      "slug": "25-turul-placii-arduino-uno-wifi-rev2",
+      "file": "Capitolul25_Turul_placii_Arduino_Uno_WiFi_Rev2.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Bazele Arduino",
+      "chapters": [
+        "arduino-01",
+        "arduino-02",
+        "arduino-03",
+        "arduino-04",
+        "arduino-05",
+        "arduino-06",
+        "arduino-07",
+        "arduino-08",
+        "arduino-09",
+        "arduino-10",
+        "arduino-11",
+        "arduino-12",
+        "arduino-13"
+      ]
+    },
+    {
+      "title": "Tutoriale de proiecte",
+      "chapters": [
+        "arduino-14",
+        "arduino-15",
+        "arduino-16",
+        "arduino-17",
+        "arduino-18",
+        "arduino-19",
+        "arduino-20",
+        "arduino-21",
+        "arduino-22"
+      ]
+    },
+    {
+      "title": "Inspirație și teste",
+      "chapters": [
+        "arduino-23",
+        "arduino-24",
+        "arduino-25"
+      ]
+    }
+  ]
+}
