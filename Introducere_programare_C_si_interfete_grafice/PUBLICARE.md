@@ -14,3 +14,7 @@ gh run list --repo danadrianparaschiv/techlabjunior --workflow publish-c-introdu
 Poți folosi un SHA complet în loc de `main`, inclusiv pentru revenire. Repetarea ediției curente nu creează un PR nou. Imaginile se păstrează în `imagini/`; exemplele de cod se scriu în blocuri Markdown delimitate. Documentele nu execută cod în site.
 
 Pagina de lectură: /biblioteca/introducere-in-c.
+
+La adăugarea unui capitol, înregistrează fișierul în `carte.json`, cu un ID și un slug noi, apoi adaugă ID-ul în grupul potrivit din `groups`. Păstrează ID-urile și slugurile capitolelor existente. Actualizează și prezentarea cărții dacă se schimbă conținutul disponibil.
+
+Ediția completă include capitolele 1–26. Programele C/GTK și fișierul Glade rămân în `codul_sursa/`, iar PDF-ul original rămâne în sursă; cititorul oferă legături către aceeași ediție GitHub.
