@@ -33,7 +33,7 @@ Această carte a fost scrisă pentru tine, chiar dacă nu ai programat niciodat�
 
 **Citește capitolele în ordine.** Capitolul 2 îți arată cum e împărțit ecranul Scratch. Fiecare proiect care urmează folosește ce ai învățat în cel dinainte: mai întâi sunete și costume, apoi bucle, apoi variabile, decizii și coordonate.
 
-**Bifează pașii.** Fiecare proiect este împărțit în pași cu căsuțe de bifat. Pe GitHub, căsuțele se văd ca atare; dacă ai printat cartea, bifează-le cu creionul.
+**Bifează pașii.** Fiecare proiect este împărțit în pași cu căsuțe de bifat. Pe GitHub, căsuțele se văd ca atare; dacă ai printat cartea, bifează-le cu creionul. În cititorul TechLab Junior poți bifa pașii în pagina deschisă; bifele se resetează la schimbarea capitolului sau reîncărcare.
 
 **Nu te uita la indicii decât dacă te-ai blocat.** Indiciile sunt ascunse în casete pe care le deschizi cu un clic (în cartea tipărită sunt scrise cu susul în jos). Încearcă mai întâi singur!
 
