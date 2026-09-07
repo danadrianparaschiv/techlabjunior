@@ -1,15 +1,15 @@
-name: Publică Arduino pe staging
+name: Publică jocurile clasice pe staging
 
 on:
   push:
     branches: [main]
     paths:
-      - 'Primii_pasi_cu_Arduino/**'
-      - '.github/workflows/publish-arduino.yml'
+      - 'Programeaza_jocurile_clasice/**'
+      - '.github/workflows/publish-classic-games.yml'
   workflow_dispatch:
     inputs:
       source_ref:
-        description: 'Versiunea Arduino: main sau SHA complet (40 de caractere)'
+        description: 'Versiunea cărții: main sau SHA complet (40 de caractere)'
         required: true
         default: main
         type: string
@@ -48,10 +48,10 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
-      - name: Import and validate the selected Arduino edition
+      - name: Import and validate the selected classic-games edition
         env:
           SOURCE_REF: ${{ inputs.source_ref || 'main' }}
-        run: npm run book:sync -- --ref "$SOURCE_REF"
+        run: npm run book:sync -- --book classic-games --ref "$SOURCE_REF"
       - run: npm test
       - run: npm run build
       - name: Token restricted to the website repository
@@ -68,4 +68,4 @@ jobs:
       - name: Open content PR and merge into staging after successful CI
         env:
           BOOK_PUBLISH_TOKEN: ${{ steps.publisher.outputs.token }}
-        run: node scripts/publish-arduino-update.js
+        run: node scripts/publish-book-update.js --book classic-games
