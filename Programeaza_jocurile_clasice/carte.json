@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "classic-games",
+  "title": "Programează jocurile clasice – Volumul I",
+  "author": "Echipa revistei Wireframe (Raspberry Pi Press)",
+  "translation": "Dan Paraschiv",
+  "year": 2019,
+  "license": "CC BY-NC-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+  "description": "Descoperă poveștile a cinci jocuri clasice și construiește propriile versiuni în Python: Boing!, Cavern, Infinite Bunner, Myriapod și Substitute Soccer.",
+  "editionNote": "Ediția originală: 2019. Exemplele folosesc Python și Pygame Zero; păstrăm notele traducătorului despre versiunile software și legăturile actualizate.",
+  "materials": "Ai nevoie de bazele Python și de un calculator cu Python, Pygame Zero și un editor de cod. Citește mai întâi capitolul 6, Instalarea, apoi pornește cu Boing!, cel mai simplu dintre cele cinci jocuri.",
+  "cover": "imagini/coperta.jpg",
+  "edition": {
+    "file": "README.md",
+    "heading": "## Cum să folosiți această carte"
+  },
+  "preparationChapter": "classic-games-06",
+  "chapters": [
+    {
+      "id": "classic-games-preface",
+      "slug": "cuvant-inainte",
+      "file": "Cuvant_inainte.md",
+      "kind": "preface"
+    },
+    {
+      "id": "classic-games-01",
+      "slug": "1-tenis-pong-si-boing",
+      "file": "Capitolul01_Tenis_Pong_si_Boing.md"
+    },
+    {
+      "id": "classic-games-02",
+      "slug": "2-platformer-bubble-bobble-si-cavern",
+      "file": "Capitolul02_Platformer_de_actiune_Bubble_Bobble_si_Cavern.md"
+    },
+    {
+      "id": "classic-games-03",
+      "slug": "3-frogger-si-infinite-bunner",
+      "file": "Capitolul03_Platformer_vazut_de_sus_Frogger_si_Infinite_Bunner.md"
+    },
+    {
+      "id": "classic-games-04",
+      "slug": "4-centipede-si-myriapod",
+      "file": "Capitolul04_Shooter_pe_un_ecran_Centipede_si_Myriapod.md"
+    },
+    {
+      "id": "classic-games-05",
+      "slug": "5-sensible-soccer-si-substitute-soccer",
+      "file": "Capitolul05_Joc_de_fotbal_Sensible_Soccer_si_Substitute_Soccer.md"
+    },
+    {
+      "id": "classic-games-06",
+      "slug": "6-instalarea",
+      "file": "Capitolul06_Instalarea.md"
+    },
+    {
+      "id": "classic-games-07",
+      "slug": "7-dan-malone-despre-grafica",
+      "file": "Capitolul07_Interviu_Dan_Malone_despre_grafica.md"
+    },
+    {
+      "id": "classic-games-08",
+      "slug": "8-allister-brimble-despre-sunet",
+      "file": "Capitolul08_Interviu_Allister_Brimble_despre_sunet.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Cuvânt înainte",
+      "chapters": [
+        "classic-games-preface"
+      ]
+    },
+    {
+      "title": "Cinci jocuri în Python",
+      "chapters": [
+        "classic-games-01",
+        "classic-games-02",
+        "classic-games-03",
+        "classic-games-04",
+        "classic-games-05"
+      ]
+    },
+    {
+      "title": "Instalare și interviuri",
+      "chapters": [
+        "classic-games-06",
+        "classic-games-07",
+        "classic-games-08"
+      ]
+    }
+  ]
+}
