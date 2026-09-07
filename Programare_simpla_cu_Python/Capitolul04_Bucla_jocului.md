@@ -1,4 +1,3 @@
-
 # Capitolul 4 – Bucla jocului și explorarea liberă
 
 ## Ce este bucla principală a jocului?

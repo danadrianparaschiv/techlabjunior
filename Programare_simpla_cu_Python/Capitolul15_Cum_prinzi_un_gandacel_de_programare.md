@@ -1,4 +1,3 @@
-
 # 🐍 „Ups! Programul meu are un bug!” — Ghid vesel pentru micii programatori Python
 
 Salut, tânăr explorator al lumii Python! 🧑‍💻  

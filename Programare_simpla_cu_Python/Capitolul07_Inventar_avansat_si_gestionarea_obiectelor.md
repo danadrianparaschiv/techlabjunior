@@ -1,4 +1,3 @@
-
 # Capitolul 7 – Inventar avansat și gestionarea obiectelor
 
 ## De ce avem nevoie de un inventar mai avansat?

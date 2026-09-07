@@ -1,4 +1,3 @@
-
 # Capitolul 10 – Clase și obiecte: Aventurieri și monștri
 
 ## De ce avem nevoie de clase și obiecte?

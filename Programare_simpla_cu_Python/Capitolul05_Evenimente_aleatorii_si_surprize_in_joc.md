@@ -1,4 +1,3 @@
-
 # Capitolul 5 – Evenimente aleatorii și surprize în joc
 
 ## De ce avem nevoie de evenimente aleatorii?

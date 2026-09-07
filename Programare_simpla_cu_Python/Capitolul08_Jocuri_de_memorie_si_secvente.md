@@ -1,4 +1,3 @@
-
 # Capitolul 8 – Jocuri de memorie și secvențe
 
 ## De ce jocuri de memorie?

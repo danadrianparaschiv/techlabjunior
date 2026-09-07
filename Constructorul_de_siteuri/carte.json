@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "website-builder",
+  "title": "Constructorul de site-uri",
+  "author": "Dan Paraschiv",
+  "translation": null,
+  "year": 2026,
+  "license": "CC BY-NC-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "description": "Construiește pagini cu HTML și CSS, apoi adaugă interacțiuni cu JavaScript. Creează un quiz, un joc și propriul portofoliu.",
+  "editionNote": "Prima ediție, 2026. Exemplele HTML, CSS și JavaScript se copiază în propriile fișiere. Răspunsurile la quiz-uri pot fi deschise la finalul capitolelor.",
+  "materials": "Calculator, browser și editor de text.",
+  "cover": null,
+  "edition": {
+    "file": "README.MD",
+    "heading": "## Cum să folosiți această carte"
+  },
+  "chapters": [
+    {
+      "id": "website-builder-01",
+      "slug": "1-bine-ai-venit-in-lumea-web",
+      "file": "Capitolul_01_Bine_ai_venit_in_lumea_web.md"
+    },
+    {
+      "id": "website-builder-02",
+      "slug": "2-construieste-cu-html",
+      "file": "Capitolul_02_Construieste_cu_HTML.md"
+    },
+    {
+      "id": "website-builder-03",
+      "slug": "3-decoreaza-pagina-cu-css-stilul-conteaza",
+      "file": "Capitolul_03_Decoreaza_pagina_cu_CSS_stilul_conteaza.md"
+    },
+    {
+      "id": "website-builder-04",
+      "slug": "4-layout-pune-lucrurile-la-locul-lor",
+      "file": "Capitolul_04_Layout_Pune_lucrurile_la_locul_lor.md"
+    },
+    {
+      "id": "website-builder-05",
+      "slug": "5-javascript-pagina-prinde-viata",
+      "file": "Capitolul_05_JavaScript_Pagina_prinde_viata.md"
+    },
+    {
+      "id": "website-builder-06",
+      "slug": "6-decizii-si-repetitii",
+      "file": "Capitolul_06_Decizii_si_repetitii.md"
+    },
+    {
+      "id": "website-builder-07",
+      "slug": "7-dom-javascript-invata-sa-controleze-pagina",
+      "file": "Capitolul_07_DOM_JavaScript_invata_sa_controleze_pagina.md"
+    },
+    {
+      "id": "website-builder-08",
+      "slug": "8-proiectul-1-test-interactiv-quiz-game",
+      "file": "Capitolul_08_Proiectul_1_Test_interactiv_quiz_game.md"
+    },
+    {
+      "id": "website-builder-09",
+      "slug": "9-animatii-css-si-javascript",
+      "file": "Capitolul_09_Animatii_CSS_si_JavaScript.md"
+    },
+    {
+      "id": "website-builder-10",
+      "slug": "10-proiectul-2-colecteaza-stelutele",
+      "file": "Capitolul_10_Proiectul_2_Colecteaza_stelutele.md"
+    },
+    {
+      "id": "website-builder-11",
+      "slug": "11-proiectul-3-portofoliul-meu",
+      "file": "Capitolul_11_Proiectul_3_Portofoliul_meu.md"
+    },
+    {
+      "id": "website-builder-12",
+      "slug": "12-ce-urmeaza-drumul-tau-ca-programator",
+      "file": "Capitolul_12_Ce_urmeaza_Drumul_tau_ca_programator.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Fundamentele web",
+      "chapters": [
+        "website-builder-01",
+        "website-builder-02",
+        "website-builder-03",
+        "website-builder-04"
+      ]
+    },
+    {
+      "title": "JavaScript și interacțiune",
+      "chapters": [
+        "website-builder-05",
+        "website-builder-06",
+        "website-builder-07"
+      ]
+    },
+    {
+      "title": "Proiecte și pașii următori",
+      "chapters": [
+        "website-builder-08",
+        "website-builder-09",
+        "website-builder-10",
+        "website-builder-11",
+        "website-builder-12"
+      ]
+    }
+  ]
+}
