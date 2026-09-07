@@ -2,7 +2,7 @@
 
 > *de David Perry*
 
-![David Perry](imagini/cap00_imagine00.jpg)
+![David Perry, autorul cuvântului înainte](imagini/cap00_imagine00.jpg)
 
 > **DESPRE AUTOR**
 > David Perry este unul dintre cei mai de succes dezvoltatori din industria jocurilor. Și-a început cariera citind cărți ca aceasta și a scris chiar el câteva. De atunci a produs multe jocuri populare, printre care Aladdin și Earthworm Jim.
