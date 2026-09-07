@@ -1,0 +1,71 @@
+name: Publică Limbajul C: un sumar rapid pe staging
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Limbajul_C_Un_Sumar_Rapid/**'
+      - '.github/workflows/publish-c-quick-reference.yml'
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: 'Versiunea cărții: main sau SHA complet (40 de caractere)'
+        required: true
+        default: main
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: book-staging-publication
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Read-only token for the private website repository
+        id: reader
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
+        with:
+          client-id: ${{ vars.BOOK_PUBLISHER_CLIENT_ID }}
+          private-key: ${{ secrets.BOOK_PUBLISHER_PRIVATE_KEY }}
+          owner: danadrianparaschiv
+          repositories: techlab-junior.ro
+          permission-contents: read
+      - name: Checkout publisher from the website staging branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: danadrianparaschiv/techlab-junior.ro
+          ref: test
+          token: ${{ steps.reader.outputs.token }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Import and validate the selected c-quick-reference edition
+        env:
+          SOURCE_REF: ${{ inputs.source_ref || 'main' }}
+        run: npm run book:sync -- --book c-quick-reference --ref "$SOURCE_REF"
+      - run: npm test
+      - run: npm run build
+      - name: Token restricted to the website repository
+        id: publisher
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
+        with:
+          client-id: ${{ vars.BOOK_PUBLISHER_CLIENT_ID }}
+          private-key: ${{ secrets.BOOK_PUBLISHER_PRIVATE_KEY }}
+          owner: danadrianparaschiv
+          repositories: techlab-junior.ro
+          permission-contents: write
+          permission-pull-requests: write
+          permission-checks: read
+      - name: Open content PR and merge into staging after successful CI
+        env:
+          BOOK_PUBLISH_TOKEN: ${{ steps.publisher.outputs.token }}
+        run: node scripts/publish-book-update.js --book c-quick-reference
