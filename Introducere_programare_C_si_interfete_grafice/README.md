@@ -29,22 +29,22 @@ Primele 12 capitole acoperă fundamentele limbajului C:
 12. [**Fișiere antet și preprocesor**](Capitol_12_Fisiere_antet_preprocesor.md) - Organizarea proiectelor mari
 
 ### Partea a II-a: Programare GUI cu GTK (Capitolele 13-26)
-Capitolele 13-26 se concentrează pe crearea de interfețe grafice:
+Capitolele 13-26 se concentrează pe crearea de interfețe grafice cu GTK 3:
 
-13. **Toolkit-ul GTK** - Introducere în GTK
-14. **Primul tău program GTK** - Crearea primei ferestre
-15. **Butoane** - Adăugarea de butoane interactive
-16. **Etichete și aspect** - Organizarea layout-ului
-17. **Mai multe opțiuni de aspect** - Opțiuni avansate de layout
-18. **Intrare text și butoane comutare** - Widget-uri pentru input
-19. **Casete combo și butoane spin** - Widget-uri de selecție
-20. **Vizualizări arborescentă** - Afișarea datelor structurate
-21. **Meniuri** - Crearea meniurilor aplicației
-22. **Dialoguri** - Ferestre de dialog personalizate
-23. **Dialoguri încorporate** - Dialoguri standard GTK
-24. **Personalizarea widget-urilor** - Modificarea aspectului
-25. **Glade** - Construirea interfețelor vizual
-26. **Referință** - Ghid de referință rapid
+13. [**Introducere în GTK**](Capitol_13_Introducere_in_GTK.md) - Ce este GTK, versiunile lui și temele
+14. [**Primul program GTK**](Capitol_14_Primul_program_GTK.md) - Prima fereastră și compilarea cu pkg-config
+15. [**Butoane**](Capitol_15_Butoane.md) - Containere, semnale și funcții callback
+16. [**Etichete și aspect**](Capitol_16_Etichete_si_aspect.md) - GtkLabel, GtkBox și un contor de apăsări
+17. [**Aspect avansat**](Capitol_17_Aspect_avansat.md) - expand, fill, padding și GtkGrid
+18. [**Introducerea datelor în GUI**](Capitol_18_Introducerea_datelor_in_GUI.md) - Câmpuri de text, butoane rotative, casete de bifat și butoane radio
+19. [**Casete combo și list store-uri**](Capitol_19_Casete_combo_si_list_store.md) - GtkComboBoxText, GtkListStore și sortarea datelor
+20. [**Vizualizări arborescente**](Capitol_20_Vizualizari_arborescente.md) - GtkTreeView cu text și pictograme, citirea selecției
+21. [**Meniuri**](Capitol_21_Meniuri.md) - Bare de meniu și meniuri contextuale
+22. [**Dialoguri**](Capitol_22_Dialoguri.md) - GtkDialog, zona de acțiune și zona de conținut
+23. [**Dialoguri încorporate**](Capitol_23_Dialoguri_incorporate.md) - Alegerea fișierelor, a culorilor și a fonturilor
+24. [**Personalizarea widgeturilor**](Capitol_24_Personalizarea_widgeturilor.md) - Proprietăți cu g_object_set și teme CSS
+25. [**Glade**](Capitol_25_Glade.md) - Editorul de aspect și GtkBuilder
+26. [**Referință rapidă C**](Capitol_26_Referinta_rapida_C.md) - Structuri de control, tipuri, specificatori de format și operatori
 
 ## Cum să folosiți această carte
 
@@ -70,6 +70,12 @@ gcc -o program_meu fisier.c `pkg-config --cflags --libs gtk+-3.0`
 ./program_meu
 ```
 
+## Codul sursă și imaginile
+
+Folderul [codul_sursa](codul_sursa/) conține programele din carte, câte un folder pe capitol (`capitolulNN/exemplulNN.c`). Pentru partea a doua, toate programele GTK din capitolele 14-25 sunt incluse ca fișiere complete, gata de compilat, inclusiv un fișier de aspect `mylayout.glade` pentru capitolul 25. Capturile de ecran din capitolele 13-25 se găsesc în folderul [imagini](imagini/), cu numele `capNN_imagineNN.jpg`.
+
+Cartea originală, în limba engleză, este inclusă aici: [C_and_GUI_Programming_2nd_Edition_EN_ORIGINAL.pdf](C_and_GUI_Programming_2nd_Edition_EN_ORIGINAL.pdf). Ea poate fi descărcată gratuit și din depozitul Raspberry Pi Press: [github.com/raspberrypipress/released-pdfs](https://github.com/raspberrypipress/released-pdfs).
+
 ## Convenții folosite în carte
 
 ### Formatare cod
@@ -87,6 +93,18 @@ Cartea conține mai multe tipuri de casete informative:
 > **SFAT**
 > Sugestii și best practices
 
+> **NOTA TRADUCĂTORULUI**
+> Explicații adăugate în traducere: nume de funcții sau pachete tipărite greșit în original, diferențe față de versiunile actuale de Raspberry Pi OS și GTK
+
+> **CODUL SURSĂ**
+> Unde se găsesc, în folderul `codul_sursa`, programele din capitolul respectiv
+
+### Ce s-a schimbat față de original
+
+- **Imagini.** Capitolele de C nu au ilustrații; pentru capitolele de GTK, capturile de ecran din carte au fost extrase în folderul `imagini` și au legendele traduse.
+- **Corecturi.** Câteva greșeli de tipar din original sunt semnalate în note: numele pachetului `gtk+-3.0`, funcția `G_CALLBACK`, widgetul `GtkEntry` și ordinea părților buclei `for` din referința rapidă.
+- **Rezumate.** Fiecare capitol se încheie cu o listă „Puncte cheie”, adăugată în traducere.
+
 ## Resurse suplimentare
 
 - [Documentația oficială GTK](https://docs.gtk.org/)
@@ -95,7 +113,9 @@ Cartea conține mai multe tipuri de casete informative:
 
 ## Despre autor
 
-Simon Long este un programator experimentat care a lucrat la dezvoltarea Raspberry Pi OS și a multor aplicații pentru platformă.
+Simon Long este inginer la Raspberry Pi, responsabil de Raspberry Pi Desktop și de aplicațiile lui. Înainte de Raspberry Pi a lucrat la Broadcom, unde l-a cunoscut pe Eben Upton, iar înainte de asta a petrecut zece ani ca inginer software și designer de interfețe la o mare firmă de consultanță. Cartea a fost publicată de Raspberry Pi Press (Raspberry Pi Trading Ltd) în 2019 (ISBN 978-1-912047-45-1), cu Russell Barnes ca director de publicare și Phil King ca redactor; ediția a doua este actualizată pentru GTK 3.
+
+Traducerea și adaptarea în limba română au fost realizate de Dan Paraschiv, inițiatorul proiectului TechLab Junior.
 
 ## Licență
 
