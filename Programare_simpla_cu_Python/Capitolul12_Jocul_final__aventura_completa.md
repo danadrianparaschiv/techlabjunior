@@ -1,4 +1,3 @@
-
 # Capitolul 12 – Jocul final: Aventura completă
 
 ## Ce vom face în acest capitol

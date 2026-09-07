@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "learn-scratch",
+  "title": "Învață să programezi cu Scratch",
+  "author": "Echipa revistei The MagPi",
+  "translation": "Dan Paraschiv",
+  "year": 2016,
+  "license": "CC BY-NC-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+  "description": "Creează jocuri, animații și un quiz cu blocuri Scratch. Proiectele suplimentare cu LED-uri folosesc un Raspberry Pi.",
+  "editionNote": "Ediția originală din 2016 folosește Scratch 1.4. Traducerea păstrează notele pentru Scratch 3. Capitolele 7 și 8 folosesc Raspberry Pi și componente electronice.",
+  "materials": "Calculator și Scratch. Raspberry Pi și componente pentru capitolele de electronică.",
+  "cover": "imagini/coperta.png",
+  "edition": {
+    "file": "README.md",
+    "heading": "## Cum să folosiți această carte"
+  },
+  "chapters": [
+    {
+      "id": "learn-scratch-01",
+      "slug": "1-primii-pasi-cu-scratch",
+      "file": "Capitolul01_Primii_pasi_cu_Scratch.md"
+    },
+    {
+      "id": "learn-scratch-02",
+      "slug": "2-ariciul-saltaret",
+      "file": "Capitolul02_Ariciul_saltaret.md"
+    },
+    {
+      "id": "learn-scratch-03",
+      "slug": "3-pierduti-in-spatiu",
+      "file": "Capitolul03_Pierduti_in_spatiu.md"
+    },
+    {
+      "id": "learn-scratch-04",
+      "slug": "4-chatbot",
+      "file": "Capitolul04_ChatBot.md"
+    },
+    {
+      "id": "learn-scratch-05",
+      "slug": "5-cursa-cu-barci",
+      "file": "Capitolul05_Cursa_cu_barci.md"
+    },
+    {
+      "id": "learn-scratch-06",
+      "slug": "6-generatorul-de-poezii-al-adei",
+      "file": "Capitolul06_Generatorul_de_poezii_al_Adei.md"
+    },
+    {
+      "id": "learn-scratch-07",
+      "slug": "7-aprinde-un-led",
+      "file": "Capitolul07_Aprinde_un_LED.md"
+    },
+    {
+      "id": "learn-scratch-08",
+      "slug": "8-semafor-cu-led-uri",
+      "file": "Capitolul08_Semafor_cu_LED-uri.md"
+    },
+    {
+      "id": "learn-scratch-09",
+      "slug": "9-quiz-cu-variante-multiple",
+      "file": "Capitolul09_Quiz_cu_variante_multiple.md"
+    },
+    {
+      "id": "learn-scratch-10",
+      "slug": "10-adauga-un-ecran-de-titlu",
+      "file": "Capitolul10_Adauga_un_ecran_de_titlu.md"
+    },
+    {
+      "id": "learn-scratch-11",
+      "slug": "11-adauga-un-tabel-cu-recorduri",
+      "file": "Capitolul11_Adauga_un_tabel_cu_recorduri.md"
+    },
+    {
+      "id": "learn-scratch-12",
+      "slug": "12-construieste-un-shooter-spatial",
+      "file": "Capitolul12_Construieste_un_shooter_spatial.md"
+    },
+    {
+      "id": "learn-scratch-13",
+      "slug": "13-referinta-rapida",
+      "file": "Capitolul13_Referinta_rapida.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Primii pași și proiecte Scratch",
+      "chapters": [
+        "learn-scratch-01",
+        "learn-scratch-02",
+        "learn-scratch-03",
+        "learn-scratch-04",
+        "learn-scratch-05",
+        "learn-scratch-06"
+      ]
+    },
+    {
+      "title": "Scratch și electronică",
+      "chapters": [
+        "learn-scratch-07",
+        "learn-scratch-08"
+      ]
+    },
+    {
+      "title": "Jocuri și referință rapidă",
+      "chapters": [
+        "learn-scratch-09",
+        "learn-scratch-10",
+        "learn-scratch-11",
+        "learn-scratch-12",
+        "learn-scratch-13"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "c-quick-reference",
+  "title": "Limbajul C: un sumar rapid",
+  "author": "Nick Parlante",
+  "translation": "Traducere în română",
+  "year": 1996,
+  "license": "Condiții de utilizare în sursă",
+  "licenseUrl": "https://github.com/danadrianparaschiv/techlabjunior/blob/main/Limbajul_C_Un_Sumar_Rapid/README.md",
+  "description": "Recapitulează sintaxa, tipurile de date și funcțiile din C. O fișă de referință utilă după ce ai început să programezi.",
+  "editionNote": "Documentul original al lui Nick Parlante este din 1996. Referința se citește într-o singură pagină; lista „În acest capitol” te duce direct la subiect. Exemplele suplimentare rămân în sursa GitHub.",
+  "materials": "Cunoștințe de bază în C.",
+  "cover": null,
+  "edition": {
+    "file": "README.md",
+    "heading": "## Din editia originala in limba engleza"
+  },
+  "chapters": [
+    {
+      "id": "c-quick-reference-01",
+      "slug": "1-limbajul-c-un-sumar-rapid",
+      "file": "Limbajul_C_Un_Sumar_Rapid.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Referință rapidă C",
+      "chapters": [
+        "c-quick-reference-01"
+      ]
+    }
+  ]
+}

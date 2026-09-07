@@ -1,4 +1,3 @@
-
 # Capitolul 9 – Hărți mai mari și mișcare liberă
 
 ## Ce am învățat până acum

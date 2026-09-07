@@ -1,6 +1,6 @@
-![Ilustratie capitol 3](./../imagini/cap3_ilustratie.png)
-
 # Capitolul 3 – Inventar, viață și primele misiuni
+
+![Ilustratie capitol 3](imagini/cap3_ilustratie.png)
 
 ## De ce avem nevoie de inventar și viață în jocuri?
 
@@ -159,4 +159,4 @@ print("Inventarul final:", inventar)
 print("Viață:", viata, "| Aur:", aur)
 ```
 
-![Exemplu executie](./../imagini/cap3_prima_aventura_rulare.png)
+![Exemplu executie](imagini/cap3_prima_aventura_rulare.png)

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "python-pygame",
+  "title": "Să facem jocuri cu Python și Pygame",
+  "author": "Al Sweigart",
+  "translation": "Dan Paraschiv",
+  "year": null,
+  "license": "Condiții de utilizare în sursă",
+  "licenseUrl": "https://github.com/danadrianparaschiv/techlabjunior/blob/main/Sa_facem_jocuri_cu_Python_si_Pygame/README.md#licență",
+  "description": "Construiește jocuri cu imagini, sunete și comenzi. Aplică noțiunile de Python în proiecte precum Memory Puzzle și Tetris.",
+  "editionNote": "Include cele 10 capitole disponibile în traducere, cu exemple de jocuri și cod de copiat. Programele se execută pe calculator, cu Python și Pygame.",
+  "materials": "Calculator cu Python și biblioteca Pygame instalate.",
+  "cover": null,
+  "edition": {
+    "file": "README.md",
+    "heading": "## Cum să folosiți această carte"
+  },
+  "preparationChapter": "python-pygame-01",
+  "chapters": [
+    {
+      "id": "python-pygame-01",
+      "slug": "1-instalarea-python-si-pygame",
+      "file": "Capitolul01_Instalarea_Python_si_Pygame.md"
+    },
+    {
+      "id": "python-pygame-02",
+      "slug": "2-bazele-pygame",
+      "file": "Capitolul02_Bazele_Pygame.md"
+    },
+    {
+      "id": "python-pygame-03",
+      "slug": "3-puzzle-de-memorie",
+      "file": "Capitolul03_Puzzle_de_memorie.md"
+    },
+    {
+      "id": "python-pygame-04",
+      "slug": "4-puzzle-glisant",
+      "file": "Capitolul04_Puzzle_glisant.md"
+    },
+    {
+      "id": "python-pygame-05",
+      "slug": "5-simon-spune",
+      "file": "Capitolul05_Simon_spune.md"
+    },
+    {
+      "id": "python-pygame-06",
+      "slug": "6-viermele",
+      "file": "Capitolul06_Viermele.md"
+    },
+    {
+      "id": "python-pygame-07",
+      "slug": "7-tetromino",
+      "file": "Capitolul07_Tetromino.md"
+    },
+    {
+      "id": "python-pygame-08",
+      "slug": "8-veverita",
+      "file": "Capitolul08_Veverita.md"
+    },
+    {
+      "id": "python-pygame-09",
+      "slug": "9-impinge-stelele",
+      "file": "Capitolul09_Impinge_stelele.md"
+    },
+    {
+      "id": "python-pygame-10",
+      "slug": "10-patru-jocuri-extra",
+      "file": "Capitolul10_Patru_jocuri_extra.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Pregătește Python și Pygame",
+      "chapters": [
+        "python-pygame-01",
+        "python-pygame-02"
+      ]
+    },
+    {
+      "title": "Construiește jocurile",
+      "chapters": [
+        "python-pygame-03",
+        "python-pygame-04",
+        "python-pygame-05",
+        "python-pygame-06",
+        "python-pygame-07",
+        "python-pygame-08",
+        "python-pygame-09"
+      ]
+    },
+    {
+      "title": "Patru jocuri suplimentare",
+      "chapters": [
+        "python-pygame-10"
+      ]
+    }
+  ]
+}

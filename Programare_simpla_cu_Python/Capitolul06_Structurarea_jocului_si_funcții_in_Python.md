@@ -1,4 +1,3 @@
-
 # Capitolul 6 – Structurarea jocului și funcții în Python
 
 ## De ce avem nevoie de funcții?

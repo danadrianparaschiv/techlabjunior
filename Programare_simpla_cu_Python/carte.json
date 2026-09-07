@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "python-adventure",
+  "title": "Programare simplă cu Python: creează jocuri pas cu pas",
+  "author": "Dan Paraschiv",
+  "translation": null,
+  "year": null,
+  "license": "CC BY-NC-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "description": "Scrie un joc de aventură text. Adaugă personaje, alegeri și întâlniri, în timp ce descoperi variabilele, condițiile și buclele.",
+  "editionNote": "Parcurge aventura în ordine, apoi folosește glosarul și ghidul de depanare. Exemplele se rulează în Python, pe calculatorul tău.",
+  "materials": "Calculator cu Python și un editor de cod.",
+  "cover": "imagini/coperta.png",
+  "edition": {
+    "file": "README.md",
+    "heading": "## De ce această carte este diferită"
+  },
+  "chapters": [
+    {
+      "id": "python-adventure-01",
+      "slug": "1-bun-venit",
+      "file": "Capitolul01_Bun_venit.md"
+    },
+    {
+      "id": "python-adventure-02",
+      "slug": "2-decizii-si-primele-harti",
+      "file": "Capitolul02_Decizii_si_primele_harti.md"
+    },
+    {
+      "id": "python-adventure-03",
+      "slug": "3-inventar-viata-si-primele-misiuni",
+      "file": "Capitolul03_Inventar_viata_si_primele_misiuni.md"
+    },
+    {
+      "id": "python-adventure-04",
+      "slug": "4-bucla-jocului",
+      "file": "Capitolul04_Bucla_jocului.md"
+    },
+    {
+      "id": "python-adventure-05",
+      "slug": "5-evenimente-aleatorii-si-surprize-in-joc",
+      "file": "Capitolul05_Evenimente_aleatorii_si_surprize_in_joc.md"
+    },
+    {
+      "id": "python-adventure-06",
+      "slug": "6-structurarea-jocului-si-functii-in-python",
+      "file": "Capitolul06_Structurarea_jocului_si_funcții_in_Python.md"
+    },
+    {
+      "id": "python-adventure-07",
+      "slug": "7-inventar-avansat-si-gestionarea-obiectelor",
+      "file": "Capitolul07_Inventar_avansat_si_gestionarea_obiectelor.md"
+    },
+    {
+      "id": "python-adventure-08",
+      "slug": "8-jocuri-de-memorie-si-secvente",
+      "file": "Capitolul08_Jocuri_de_memorie_si_secvente.md"
+    },
+    {
+      "id": "python-adventure-09",
+      "slug": "9-harti-mai-mari-si-miscare-libera",
+      "file": "Capitolul09_Harti_mai_mari_si_miscare_libera.md"
+    },
+    {
+      "id": "python-adventure-10",
+      "slug": "10-programarea-orientata-pe-obiecte-oop",
+      "file": "Capitolul10_Programarea_orientată_pe_obiecte__OOP_.md"
+    },
+    {
+      "id": "python-adventure-11",
+      "slug": "11-salvarea-si-incarcarea-progresului",
+      "file": "Capitolul11_Salvarea_si_incarcarea_progresului.md"
+    },
+    {
+      "id": "python-adventure-12",
+      "slug": "12-jocul-final-aventura-completa",
+      "file": "Capitolul12_Jocul_final__aventura_completa.md"
+    },
+    {
+      "id": "python-adventure-13",
+      "slug": "13-in-loc-de-incheiere",
+      "file": "Capitolul13_In_loc_de_incheiere.md"
+    },
+    {
+      "id": "python-adventure-14",
+      "slug": "14-glosar-de-termeni",
+      "file": "Capitolul14_Glosar_de_termeni.md"
+    },
+    {
+      "id": "python-adventure-15",
+      "slug": "15-cum-prinzi-un-gandacel-de-programare",
+      "file": "Capitolul15_Cum_prinzi_un_gandacel_de_programare.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Primele aventuri",
+      "chapters": [
+        "python-adventure-01",
+        "python-adventure-02",
+        "python-adventure-03",
+        "python-adventure-04",
+        "python-adventure-05"
+      ]
+    },
+    {
+      "title": "Construiește jocul complet",
+      "chapters": [
+        "python-adventure-06",
+        "python-adventure-07",
+        "python-adventure-08",
+        "python-adventure-09",
+        "python-adventure-10",
+        "python-adventure-11",
+        "python-adventure-12"
+      ]
+    },
+    {
+      "title": "Încheiere, glosar și depanare",
+      "chapters": [
+        "python-adventure-13",
+        "python-adventure-14",
+        "python-adventure-15"
+      ]
+    }
+  ]
+}

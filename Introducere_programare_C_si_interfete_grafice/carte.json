@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "c-introduction",
+  "title": "O introducere în programarea C și a interfețelor grafice",
+  "author": "Simon Long",
+  "translation": "Traducere în română",
+  "year": null,
+  "license": "CC BY-NC-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+  "description": "Învață variabile, condiții, pointeri și funcții în C. Sunt disponibile cele 12 capitole despre bazele limbajului; partea despre interfețe GTK nu este încă publicată.",
+  "editionNote": "Sunt disponibile primele 12 capitole, despre bazele limbajului C. Capitolele 13–26 despre GTK sunt enumerate în prezentarea originală, dar textele lor nu sunt încă în repository.",
+  "materials": "Calculator cu un compilator C și un editor de text. Exemplele folosesc gcc pe Linux sau Raspberry Pi OS.",
+  "cover": null,
+  "edition": {
+    "file": "README.md",
+    "heading": "## Cum să folosiți această carte"
+  },
+  "chapters": [
+    {
+      "id": "c-introduction-01",
+      "slug": "1-introducere",
+      "file": "Capitol_01_Introducere.md"
+    },
+    {
+      "id": "c-introduction-02",
+      "slug": "2-variabile-si-aritmetica",
+      "file": "Capitol_02_Variabile_si_aritmetica.md"
+    },
+    {
+      "id": "c-introduction-03",
+      "slug": "3-conditii-si-comparatii",
+      "file": "Capitol_03_Conditii_si_comparatii.md"
+    },
+    {
+      "id": "c-introduction-04",
+      "slug": "4-control-flux-avansat",
+      "file": "Capitol_04_Control_flux_avansat.md"
+    },
+    {
+      "id": "c-introduction-05",
+      "slug": "5-pointeri",
+      "file": "Capitol_05_Pointeri.md"
+    },
+    {
+      "id": "c-introduction-06",
+      "slug": "6-functii",
+      "file": "Capitol_06_Functii.md"
+    },
+    {
+      "id": "c-introduction-07",
+      "slug": "7-tablouri-si-siruri",
+      "file": "Capitol_07_Tablouri_si_siruri.md"
+    },
+    {
+      "id": "c-introduction-08",
+      "slug": "8-biblioteca-manipulare-siruri",
+      "file": "Capitol_08_Biblioteca_manipulare_siruri.md"
+    },
+    {
+      "id": "c-introduction-09",
+      "slug": "9-interactiunea-cu-utilizatorul",
+      "file": "Capitol_09_Interactiunea_cu_utilizatorul.md"
+    },
+    {
+      "id": "c-introduction-10",
+      "slug": "10-fisiere-de-intrare-iesire",
+      "file": "Capitol_10_Fisiere_de_intrare_iesire.md"
+    },
+    {
+      "id": "c-introduction-11",
+      "slug": "11-mai-multe-despre-tipuri-variabile",
+      "file": "Capitol_11_Mai_multe_despre_tipuri_variabile.md"
+    },
+    {
+      "id": "c-introduction-12",
+      "slug": "12-fisiere-antet-preprocesor",
+      "file": "Capitol_12_Fisiere_antet_preprocesor.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Bazele limbajului C",
+      "chapters": [
+        "c-introduction-01",
+        "c-introduction-02",
+        "c-introduction-03",
+        "c-introduction-04"
+      ]
+    },
+    {
+      "title": "Date și funcții",
+      "chapters": [
+        "c-introduction-05",
+        "c-introduction-06",
+        "c-introduction-07",
+        "c-introduction-08"
+      ]
+    },
+    {
+      "title": "Intrare, ieșire și organizarea codului",
+      "chapters": [
+        "c-introduction-09",
+        "c-introduction-10",
+        "c-introduction-11",
+        "c-introduction-12"
+      ]
+    }
+  ]
+}
