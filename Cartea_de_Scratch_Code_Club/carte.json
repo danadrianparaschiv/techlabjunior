@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "scratch-code-club",
+  "title": "Cartea de Scratch Code Club – Volumul 1",
+  "author": "Rik Cross și Tracy Gardner",
+  "translation": "Dan Paraschiv",
+  "year": 2018,
+  "license": "CC BY-NC-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+  "description": "Construiește o trupă rock, un chatbot și patru jocuri sau animații. Înveți evenimente, bucle și variabile, pas cu pas.",
+  "editionNote": "Ediția originală: 2018, pentru Scratch 2. Păstrăm imaginile blocurilor în engleză și notele traducătorului pentru Scratch 3. Proiectele se construiesc în editorul Scratch.",
+  "materials": "Ai nevoie de un calculator cu Scratch în browser sau instalat; nu trebuie să știi deja să programezi. Începe cu primele două capitole, apoi parcurge proiectele în ordine. Poți bifa pașii în pagina deschisă; bifele se resetează când schimbi capitolul sau reîncarci pagina.",
+  "cover": "imagini/coperta.jpg",
+  "edition": {
+    "file": "README.md",
+    "heading": "## Cum să folosiți această carte"
+  },
+  "chapters": [
+    {
+      "id": "scratch-code-club-01",
+      "slug": "1-bun-venit",
+      "file": "Capitolul01_Bun_venit.md"
+    },
+    {
+      "id": "scratch-code-club-02",
+      "slug": "2-sa-facem-cunostinta-cu-scratch",
+      "file": "Capitolul02_Sa_facem_cunostinta_cu_Scratch.md"
+    },
+    {
+      "id": "scratch-code-club-03",
+      "slug": "3-trupa-rock",
+      "file": "Capitolul03_Trupa_rock.md"
+    },
+    {
+      "id": "scratch-code-club-04",
+      "slug": "4-pierduti-in-spatiu",
+      "file": "Capitolul04_Pierduti_in_spatiu.md"
+    },
+    {
+      "id": "scratch-code-club-05",
+      "slug": "5-vanatorul-de-fantome",
+      "file": "Capitolul05_Vanatorul_de_fantome.md"
+    },
+    {
+      "id": "scratch-code-club-06",
+      "slug": "6-chatbot",
+      "file": "Capitolul06_Chatbot.md"
+    },
+    {
+      "id": "scratch-code-club-07",
+      "slug": "7-la-tinta",
+      "file": "Capitolul07_La_tinta.md"
+    },
+    {
+      "id": "scratch-code-club-08",
+      "slug": "8-cursa-cu-barci",
+      "file": "Capitolul08_Cursa_cu_barci.md"
+    },
+    {
+      "id": "scratch-code-club-09",
+      "slug": "9-cod-util",
+      "file": "Capitolul09_Cod_util.md"
+    },
+    {
+      "id": "scratch-code-club-10",
+      "slug": "10-solutiile-jocurilor",
+      "file": "Capitolul10_Solutiile_jocurilor.md"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Primii pași cu Scratch",
+      "chapters": [
+        "scratch-code-club-01",
+        "scratch-code-club-02"
+      ]
+    },
+    {
+      "title": "Șase proiecte pas cu pas",
+      "chapters": [
+        "scratch-code-club-03",
+        "scratch-code-club-04",
+        "scratch-code-club-05",
+        "scratch-code-club-06",
+        "scratch-code-club-07",
+        "scratch-code-club-08"
+      ]
+    },
+    {
+      "title": "Cod util și soluții",
+      "chapters": [
+        "scratch-code-club-09",
+        "scratch-code-club-10"
+      ]
+    }
+  ]
+}
